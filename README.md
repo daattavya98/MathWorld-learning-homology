@@ -84,7 +84,8 @@ poetry run python src/conj_refute_env/pickle_my_model.py \
 # Artifacts
 ## Contents
 
-The code for generating the datasets can be found at: [data repository](https://github.com/daattavya98/surface_triangulations)
+The code for generating the datasets can be found at: [surface_triangulations](https://github.com/daattavya98/surface_triangulations)
 
-All artifacts can be found at: [artifacts](https://zenodo.org/records/19219927)
+All artifacts can be found at: [artifacts](https://zenodo.org/records/19219927).
+
 This includes checkpoints for trained models, evaluation results and a collection of formalized conjectures along with a suggested proof. These are not required to run the code but are provided to cross verify with the paper.
