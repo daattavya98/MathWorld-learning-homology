@@ -1,0 +1,140 @@
+{
+  "blk_1": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "blk_2": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "blk_3": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "blk_4": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "blk_5": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "blk_6": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "blk_7": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "blk_8": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "blk_9": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "blk_10": {
+    "genetic_algorithm_float_parameters": {
+      "complexityWeight": 1.0,
+      "equalsUsedBoost": 0.2,
+      "plusUsedBoost": 0.6,
+      "timesUsedBoost": 0.4,
+      "minusUsedBoost": 0.4
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 25
+    }
+  },
+  "scaffolding": {
+    "genetic_algorithm_float_parameters": {
+        "complexityWeight": 1.5,
+        "logicalNegUsedBoost": 2.0,
+        "impliesUsedBoost": 3.0,
+        "conjunctionUsedBoost": 3.0
+    },
+    "genetic_algorithm_int_parameters": {
+      "maxsize": 30
+    }
+  },
+  "alpha_conj": 150.0,
+  "beta_ref": 3.0,
+  "gamma_ref": 0.5,
+  "beta_conj": 3.0,
+  "repeat_penalty": 0.3,
+  "uniform_conj": 0.8,
+  "formal_response_enabled": true
+}

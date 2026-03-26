@@ -1,0 +1,39 @@
+[project]
+name = "conj-refute"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Daattavya Aggarwal",email = "da579@cam.ac.uk"},
+    {name = "Oisin Kim",email = "osmk3@cam.ac.uk"} 
+]
+readme = "README.md"
+requires-python = ">=3.11, <3.12"
+
+dependencies = [
+    "sympy (>=1.13.1,<2.0.0)",
+    "scipy (>=1.15.2,<1.16)",
+    "matplotlib (>=3.9.4,<3.10.0)",
+    "pathlib (>=1.0.1,<2.0.0)",
+    "numpy (>=1.26.4,<2.0.0)",
+    "pettingzoo (>=1.24.3,<2.0.0)",
+    "beartype (>=0.20.2,<0.21.0)",
+    "isort (>=6.0.1,<7.0.0)",
+    "pysr (>=1.5.8,<2.0.0)",
+    "toponetx (>=0.2.0,<0.3.0)",
+    "networkx (>=3.4.2,<4.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "tensorboard (>=2.19.0,<3.0.0)",
+    "leanclient (>=0.1.7,<0.2.0)",
+    "torch (>=2.5.0,<3.0.0)",
+    "agilerl (>=2.2.2,<2.3.0)",
+    "debugpy (>=1.8.14,<2.0.0)",
+    "tabulate (>=0.9.0,<0.10.0)",
+    "ipdb (>=0.13.13,<0.14.0)",
+    "pytest (>=8.4.2,<9.0.0)",
+    "ruff (>=0.15.7,<0.16.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

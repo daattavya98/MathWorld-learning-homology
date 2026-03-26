@@ -1,0 +1,22 @@
+name = "formal_response"
+version = "0.2.0"
+defaultTargets = ["formal_response"]
+
+[[lean_lib]]
+name = "formal_response"
+
+[[lean_exe]]
+name = "formal_response.lean"
+root = "formal_response"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.24.0"
+
+moreLinkArgs = ["-L./.lake/packages/LeanCopilot/.lake/build/lib", "-lctranslate2"]
+
+[[require]]
+name = "LeanCopilot"
+git = "https://github.com/lean-dojo/LeanCopilot.git"
+rev = "v4.24.0"
