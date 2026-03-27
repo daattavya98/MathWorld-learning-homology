@@ -53,8 +53,7 @@ Set two experiment selectors before running:
 
 More details on the model profiles can be found in the paper.
 
-If you pass both a model profile and explicit manual flags (for example
-`--formal-response-enabled`), the explicit manual flags override the profile defaults.
+Training and evaluation take ~8-10 hours each on a macbook pro M3.
 
 ### Training example (Poetry)
 
