@@ -7,6 +7,90 @@ import pandas as pd
 import sympy as sp
 
 
+_READABLE_TOKEN = re.compile(r"\s*([wrnh]\(D[12]\)|\d+\.\d+|\d+|[()=≠∧⇒¬+\-*])")
+_READABLE_SYMBOLS = {
+    "w(D1)": "width_D1",
+    "w(D2)": "width_D2",
+    "h(D1)": "height_D1",
+    "h(D2)": "height_D2",
+    "r(D1)": "rank_D1",
+    "r(D2)": "rank_D2",
+    "n(D1)": "nullity_D1",
+    "n(D2)": "nullity_D2",
+}
+_READABLE_LOGIC = {"=": "equals", "∧": "conjunction", "⇒": "implies"}
+
+
+def is_readable_conjecture(text):
+    """True for the form written by env.utils.conjecture_to_readable_latex."""
+    return "equals(" not in text and re.search(r"[=≠∧⇒¬]", text) is not None
+
+
+def _tokenize_readable(text):
+    tokens, pos = [], 0
+    text = text.rstrip()
+    while pos < len(text):
+        match = _READABLE_TOKEN.match(text, pos)
+        if match is None:
+            raise ValueError(f"Unexpected text at {pos} in readable conjecture: {text!r}")
+        tokens.append(match.group(1))
+        pos = match.end()
+    return tokens
+
+
+def readable_to_raw(text):
+    """Inverse of conjecture_to_readable_latex's rendering (without undoing its simplification)."""
+    tokens = _tokenize_readable(text)
+    pos = 0
+
+    def expect(token):
+        nonlocal pos
+        if pos >= len(tokens) or tokens[pos] != token:
+            raise ValueError(f"Expected {token!r} at token {pos} in {text!r}")
+        pos += 1
+
+    def node():
+        nonlocal pos
+        if pos >= len(tokens):
+            raise ValueError(f"Unexpected end of readable conjecture: {text!r}")
+        token = tokens[pos]
+        if token == "¬":
+            pos += 1
+            expect("(")
+            inner = node()
+            expect(")")
+            return f"logical_neg({inner})"
+        if token == "(":
+            pos += 1
+            left = node()
+            if pos >= len(tokens):
+                raise ValueError(f"Unexpected end of readable conjecture: {text!r}")
+            op = tokens[pos]
+            pos += 1
+            right = node()
+            expect(")")
+            if op in _READABLE_LOGIC:
+                return f"{_READABLE_LOGIC[op]}({left}, {right})"
+            if op == "≠":
+                return f"logical_neg(equals({left}, {right}))"
+            if op in {"+", "-", "*"}:
+                return f"({left} {op} {right})"
+            raise ValueError(f"Unknown operator {op!r} in {text!r}")
+        pos += 1
+        if token in _READABLE_SYMBOLS:
+            return _READABLE_SYMBOLS[token]
+        if token.isdigit():
+            return f"_{token}" if token in {"0", "1", "2"} else token
+        if re.fullmatch(r"\d+\.\d+", token):
+            return token
+        raise ValueError(f"Unexpected token {token!r} in {text!r}")
+
+    raw = node()
+    if pos != len(tokens):
+        raise ValueError(f"Trailing tokens in readable conjecture: {text!r}")
+    return raw
+
+
 def find_matching_paren(text, start_index):
     """Find the index of the matching closing parenthesis."""
     depth = 1
@@ -78,6 +162,13 @@ def load_conjecture_dataframe(
     df = df.dropna(subset=["conjecture"])
     if df.empty:
         raise ValueError("CSV contains no conjectures.")
+
+    readable = df["conjecture"].map(is_readable_conjecture)
+    if readable.any():
+        df = df.copy()
+        df.loc[readable, "conjecture"] = df.loc[readable, "conjecture"].map(
+            readable_to_raw
+        )
 
     return df, resolved_csv_path
 

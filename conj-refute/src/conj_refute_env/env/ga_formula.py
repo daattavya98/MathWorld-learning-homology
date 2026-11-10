@@ -645,7 +645,7 @@ def scaffolded_conj_from_ga_params(
 
     if best_df.empty:
         print("No equations were found for this set of parameters.")
-        return None, 0
+        return None, 0, {}, {}
 
     conj = model.get_best().equation
     len_conj = model.get_best().complexity

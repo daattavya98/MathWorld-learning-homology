@@ -6,6 +6,7 @@ MathWorld environment.
 import os
 import json
 import argparse
+import random
 import uuid
 import time
 from pathlib import Path
@@ -48,6 +49,8 @@ NET_CONFIG = {
 }
 
 # ——— Pure MADDPG hyperparameters ———
+# Only MEMORY_SIZE and LEARN_STEP are read; the MADDPG knobs come from the CLI
+# flags below (defaults = AgileRL 2.2.8 constructor defaults, which is what ran).
 INIT_HP = {
     "BATCH_SIZE": 32,
     "O_U_NOISE": False,
@@ -198,7 +201,91 @@ def parse_args():
         default=None,
         help="Threshold used when strict-proof-check is disabled",
     )
+
+    rl = parser.add_argument_group("MADDPG (defaults = AgileRL 2.2.8 MADDPG defaults)")
+    rl.add_argument("--lr-actor", type=float, default=1e-3)
+    rl.add_argument("--lr-critic", type=float, default=1e-2)
+    rl.add_argument("--gamma", type=float, default=0.95)
+    rl.add_argument("--tau", type=float, default=0.01)
+    rl.add_argument("--batch-size", type=int, default=64)
+    rl.add_argument("--ou-noise", action=argparse.BooleanOptionalAction, default=True)
+    rl.add_argument("--expl-noise", type=float, default=0.1)
+    rl.add_argument("--mean-noise", type=float, default=0.0)
+    rl.add_argument("--theta", type=float, default=0.15)
+    rl.add_argument("--dt", type=float, default=1e-2)
+    parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument(
+        "--records-file",
+        type=str,
+        default=None,
+        help="Append one JSON line per env per vec-step",
+    )
     return parser.parse_args()
+
+
+def maddpg_kwargs(args):
+    return {
+        "lr_actor": args.lr_actor,
+        "lr_critic": args.lr_critic,
+        "gamma": args.gamma,
+        "tau": args.tau,
+        "batch_size": args.batch_size,
+        "O_U_noise": args.ou_noise,
+        "expl_noise": args.expl_noise,
+        "mean_noise": args.mean_noise,
+        "theta": args.theta,
+        "dt": args.dt,
+    }
+
+
+def resolved_maddpg_hparams(agent):
+    return {
+        "lr_actor": agent.lr_actor,
+        "lr_critic": agent.lr_critic,
+        "gamma": agent.gamma,
+        "tau": agent.tau,
+        "batch_size": agent.batch_size,
+        "O_U_noise": agent.O_U_noise,
+        "expl_noise": float(agent.expl_noise[0].flatten()[0]),
+        "mean_noise": float(agent.mean_noise[0].flatten()[0]),
+        "theta": agent.theta,
+        "dt": agent.dt,
+    }
+
+
+def _jsonable(x):
+    if isinstance(x, np.generic):
+        return x.item()
+    return x
+
+
+def write_step_records(path, total_steps, infos, rewards, term, trunc, num_envs, agent_ids):
+    ic = infos.get("conjecturer", {})
+    keys = [
+        "conjecture",
+        "formal_response",
+        "rew_conj_formal",
+        "rew_conj_div",
+        "rew_conj_uniform",
+        "rew_ref_formal",
+        "rew_ref_data",
+        "rew_ref_spread",
+        "uniform_block_val",
+        "repeat_block_val",
+        "arith_number",
+        "env_id",
+    ]
+    with open(path, "a", encoding="utf-8") as f:
+        for i in range(num_envs):
+            rec = {"total_steps": total_steps, "env": i, "t_wall": time.time()}
+            for k in keys:
+                if k in ic:
+                    rec[k] = _jsonable(ic[k][i])
+            for a in agent_ids:
+                rec[f"reward_{a}"] = _jsonable(np.asarray(rewards[a])[i])
+                rec[f"term_{a}"] = bool(np.asarray(term[a])[i])
+                rec[f"trunc_{a}"] = bool(np.asarray(trunc[a])[i])
+            f.write(json.dumps(rec) + "\n")
 
 
 def make_env(env_config, num_envs=3):
@@ -264,9 +351,32 @@ def main():
     cfg = apply_model_profile_defaults(cfg, model_profile)
     cfg = apply_env_mode_overrides(cfg, args)
 
+    if args.seed is not None:
+        random.seed(args.seed)
+        np.random.seed(args.seed)
+        torch.manual_seed(args.seed)
+
+    def reset_seed(block_idx):
+        if args.seed is None:
+            return None
+        return args.seed * 1_000_000 + block_idx * args.num_envs
+
+    run_meta = {
+        "run_id": run_id,
+        "seed": args.seed,
+        "prover_backend": os.environ.get("CONJ_REFUTE_PROVER", "leancopilot"),
+        "julia_threads": os.environ.get("PYTHON_JULIACALL_THREADS"),
+        "dataset_profile": experiment_settings["dataset_profile"],
+        "rows_per_dataset": experiment_settings["rows_per_dataset"],
+        "model_profile": model_profile,
+        "memory_size": INIT_HP["MEMORY_SIZE"],
+        "learning_delay": INIT_HP["LEARN_STEP"],
+    }
+
     # 3) build a single full_config for W&B: RL + env
     full_config = {
-        **INIT_HP,
+        **{f"maddpg_{k}": v for k, v in maddpg_kwargs(args).items()},
+        **run_meta,
         **NET_CONFIG,
         "num_envs": args.num_envs,
         "max_steps": args.max_steps,
@@ -311,7 +421,7 @@ def main():
     # Create the environment with specific parameters
     print("Creating environment...")
     env = make_env(cfg, num_envs)
-    obs, infos = env.reset()
+    obs, infos = env.reset(seed=reset_seed(0))
 
     # Convert observations to float32
     obs = {aid: arr.astype(np.float32) for aid, arr in obs.items()}
@@ -335,7 +445,26 @@ def main():
         net_config=NET_CONFIG,
         device=device,
         vect_noise_dim=num_envs,
+        **maddpg_kwargs(args),
     )
+    resolved = resolved_maddpg_hparams(agent)
+    print(f"MADDPG hyperparameters: {resolved}")
+    wandb.config.update({f"resolved_{k}": v for k, v in resolved.items()})
+    os.makedirs(args.save_dir, exist_ok=True)
+    with open(os.path.join(args.save_dir, f"{run_id}_hparams.json"), "w") as f:
+        json.dump(
+            {
+                "maddpg": resolved,
+                **run_meta,
+                "net_config": NET_CONFIG,
+                "num_envs": args.num_envs,
+                "max_steps": args.max_steps,
+                "train_block": args.train_block,
+                "env_config": cfg,
+            },
+            f,
+            indent=2,
+        )
 
     # Resume from checkpoint if provided
     if args.resume_checkpoint:
@@ -379,9 +508,11 @@ def main():
 
     # MAIN TRAINING LOOP
     print("Starting training...")
+    block_idx = 0
     while total_steps < max_steps:
+        block_idx += 1
         # reset env (vectorised)
-        obs, infos = env.reset()
+        obs, infos = env.reset(seed=reset_seed(block_idx))
         obs = {aid: o.astype(np.float32) for aid, o in obs.items()}
 
         scores = np.zeros((num_envs, len(agent_ids)))
@@ -487,6 +618,18 @@ def main():
                 obs = {aid: o.astype(np.float32) for aid, o in obs.items()}
 
                 continue
+
+            if args.records_file:
+                write_step_records(
+                    args.records_file,
+                    total_steps + num_envs,
+                    infos,
+                    rewards,
+                    term,
+                    trunc,
+                    num_envs,
+                    agent_ids,
+                )
 
             # store in replay buffer
             memory.save_to_memory(

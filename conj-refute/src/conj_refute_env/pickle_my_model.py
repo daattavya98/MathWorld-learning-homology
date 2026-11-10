@@ -3,12 +3,9 @@ import os
 import json
 import argparse
 import pickle
+import random
+import time
 import numpy as np
-import torch
-import wandb
-from tqdm import tqdm
-import pandas as pd
-
 from conj_refute_env import (
     MathWorld,
     manage_caches,
@@ -19,6 +16,11 @@ from conj_refute_env import (
     LEAN_DATA_DIR,
     atomic_eval_stats,
 )
+import torch
+import wandb
+from tqdm import tqdm
+import pandas as pd
+
 from conj_refute_env.env.utils import enforce_run_lock, assert_formal_response_assets
 from conj_refute_env.cli_utils import (
     normalize_config_id,
@@ -57,6 +59,7 @@ def parse_args():
     p.add_argument("--episodes", type=int, default=15)
     p.add_argument("--max-steps", type=int, default=50)
     p.add_argument("--output-file", type=str, default="step_data.pkl")
+    p.add_argument("--seed", type=int, default=None)
     p.add_argument(
         "--wandb-mode",
         type=str,
@@ -118,6 +121,10 @@ def main():
     args = parse_args()
     model_profile = normalize_model_profile(args.model_profile)
     device = torch.device("cpu")
+    if args.seed is not None:
+        random.seed(args.seed)
+        np.random.seed(args.seed)
+        torch.manual_seed(args.seed)
 
     lean_assets = assert_formal_response_assets(create_lean_dir=True)
     print(f"🧠 Lean assets ready at: {lean_assets['formal_response_root']}")
@@ -159,7 +166,9 @@ def main():
     # Outer progress bar for episodes
     for ep in tqdm(range(args.episodes), desc="Episodes"):
         env = MathWorld(env_config=env_cfg)
-        state, infos = env.reset()
+        state, infos = env.reset(
+            seed=None if args.seed is None else args.seed * 1_000_000 + ep
+        )
         cum = {"conjecturer": 0.0, "refuter": 0.0}
 
         # Inner progress bar for steps in this episode
@@ -226,6 +235,7 @@ def main():
             record = {
                 "episode": ep,
                 "step": step,
+                "t_wall": time.time(),
                 "cum_reward_conj": cum["conjecturer"],
                 "cum_reward_ref": cum["refuter"],
                 # from infos

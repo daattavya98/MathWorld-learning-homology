@@ -7,13 +7,14 @@ from pathlib import Path
 import leanclient as lc
 from leanclient.utils import DocumentContentChange
 
+from .utils import resolve_formal_response_root
+
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-PROJECT_ROOT = (
-    Path(__file__).resolve().parent.parent.parent.parent.parent / "formal_response"
-)
+PROJECT_ROOT = resolve_formal_response_root()
 TEMPLATE_FILE = PROJECT_ROOT / "template.lean"
 LEAN_SUBDIR = "lean_files"
 TIMEOUT = 15.0  # seconds to wait for diagnostics
+OPEN_TIMEOUT_GRIND = 120.0
 PROOF_CACHE_PATH = PROJECT_ROOT / "proof_cache_new.json"
 
 TEMP_CACHE_DIR = PROJECT_ROOT / "temp_proof_caches"
@@ -36,7 +37,10 @@ def _conj_path_for(env_id: str) -> Path:
 
 
 # ─── GLOBALS ─────────────────────────────────────────────────────────────────
-_client = lc.LeanLSPClient(str(PROJECT_ROOT))
+_client = lc.LeanLSPClient(
+    str(PROJECT_ROOT),
+    initial_build=os.environ.get("CONJ_REFUTE_LEAN_INITIAL_BUILD", "1") != "0",
+)
 _fileclients = {}
 
 
@@ -338,3 +342,43 @@ def check_theorem_no_leancopilot(
         _write_cache(c, cache_path=temp_path)
 
     return result
+
+
+def _theorem_name(lean_stmt: str) -> str:
+    m = re.match(r"\s*theorem\s+(\S+)", lean_stmt)
+    if not m:
+        raise ValueError("lean_stmt must start with `theorem <name>`")
+    return m.group(1)
+
+
+def axioms_witness(diags: list, name: str) -> list:
+    keys = (f"'{name}' depends on axioms", f"'{name}' does not depend on any axioms")
+    return [d.get("message", "") for d in diags if any(k in d.get("message", "") for k in keys)]
+
+
+def grind_verdict(diags: list, name: str) -> int:
+    if any(d.get("severity") == 1 or "error" in d for d in diags):
+        return 0
+    witness = axioms_witness(diags, name)
+    return int(len(witness) == 1 and "sorryAx" not in witness[0])
+
+
+def check_theorem_grind(
+    lean_stmt: str, env_id: str, run_ts: int, use_cache: bool = False, return_diags: bool = False
+):
+    name = _theorem_name(lean_stmt)
+    conj_path = _conj_path_for(env_id)
+    if env_id not in _fileclients:
+        fc = _client.create_file_client(file_path=f"{LEAN_SUBDIR}/{conj_path.name}")
+        fc.open_file(timeout=OPEN_TIMEOUT_GRIND)
+        _fileclients[env_id] = fc
+    else:
+        fc = _fileclients[env_id]
+
+    full = header_text.rstrip() + "\n\n" + marker_line + "\n" + lean_stmt.rstrip() + f"\n\n#print axioms {name}\n"
+    conj_path.write_text(full)
+    old = fc.get_file_content().split("\n")
+    change = DocumentContentChange(text=full, start=[0, 0], end=[len(old) - 1, len(old[-1])])
+    diags = fc.update_file(changes=[change], timeout=TIMEOUT)
+    result = grind_verdict(diags, name)
+    return (result, diags) if return_diags else result

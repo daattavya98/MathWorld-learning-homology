@@ -12,9 +12,34 @@ from datetime import datetime, timezone
 # from pysr import TensorBoardLoggerSpec
 
 project_root = Path(__file__).resolve().parent.parent
-PROJECT_ROOT = (
-    Path(__file__).resolve().parent.parent.parent.parent.parent / "formal_response"
-)
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent.parent
+
+# leancopilot = paper prover; grind_legacy = paper's check_theorem_no_leancopilot;
+# grind = same tactic, scored only on a completed `#print axioms` witness.
+PROVER_BACKENDS = {
+    "leancopilot": "formal_response",
+    "grind_legacy": "formal_response_grind",
+    "grind": "formal_response_grind",
+}
+
+
+def get_prover_backend() -> str:
+    backend = os.environ.get("CONJ_REFUTE_PROVER", "leancopilot").strip().lower()
+    if backend not in PROVER_BACKENDS:
+        raise ValueError(
+            f"CONJ_REFUTE_PROVER={backend!r}; allowed: {', '.join(PROVER_BACKENDS)}"
+        )
+    return backend
+
+
+def resolve_formal_response_root() -> Path:
+    override = os.environ.get("CONJ_REFUTE_FORMAL_RESPONSE_DIR")
+    if override:
+        return Path(override).resolve()
+    return REPO_ROOT / PROVER_BACKENDS[get_prover_backend()]
+
+
+PROJECT_ROOT = resolve_formal_response_root()
 PROOF_CACHE_PATH = PROJECT_ROOT / "proof_cache_new.json"
 TEMP_CACHE_DIR = PROJECT_ROOT / "temp_proof_caches"
 LEAN_DATA_DIR = PROJECT_ROOT / "lean_files"

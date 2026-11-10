@@ -225,3 +225,10 @@ conj-refute/src/trajectories_chi/
 *.backup2
 *.tmp
 
+
+# reviews: grind Lean project artefacts
+formal_response_grind/.lake/
+formal_response_grind/lean_files/
+formal_response_grind/temp_proof_caches/
+formal_response_grind/proof_cache*.json*
+formal_response/proof_cache_final.jsonl

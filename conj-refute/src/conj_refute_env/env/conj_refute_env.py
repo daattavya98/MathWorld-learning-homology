@@ -12,20 +12,37 @@ from .utils import (
     get_active_dataset_profile,
     get_rows_for_dataset,
     get_profile_dataset_filenames,
+    get_prover_backend,
 )
-from .conjecture_to_lean_statement import translate_fol_to_lean
+from .conjecture_to_lean_statement import (
+    translate_fol_to_lean,
+    translate_fol_to_lean_with_grind,
+)
 from .ga_formula import (
     atomic_from_atomic_ga_params,
     scaffolded_conj_from_ga_params,
     evaluate_conjecture_on_dataset,
 )
-from .check_lean_theorem import check_theorem
+from .check_lean_theorem import (
+    check_theorem,
+    check_theorem_no_leancopilot,
+    check_theorem_grind,
+)
 from typing import List, Tuple, Dict
+import random
 import uuid
 from scipy.special import comb
 
 
 proj_root = Path(__file__).resolve().parent.parent
+
+PROVERS = {
+    "leancopilot": (translate_fol_to_lean, check_theorem),
+    "grind_legacy": (translate_fol_to_lean_with_grind, check_theorem_no_leancopilot),
+    "grind": (translate_fol_to_lean_with_grind, check_theorem_grind),
+}
+PROVER_BACKEND = get_prover_backend()
+translate_statement, check_statement = PROVERS[PROVER_BACKEND]
 
 
 def _get_profile_or_raise() -> str:
@@ -178,7 +195,7 @@ def compute_uniformity_and_repeats(
         print(
             f"No blocks selected, returning {self.no_of_blocks} for uniform and repeat values."
         )
-        return self.no_of_blocks, 0.0
+        return self.no_of_blocks, 0.0, {}, {}
     else:
         full_dataset_scalar = np.ones(int(data_used), dtype=np.float64)
         for blk_key, count in blk_counts.items():
@@ -301,7 +318,7 @@ def compute_reward_terms(
         conj = fix_conj_str(conj)
         # # Translate the conjecture into a lean theorem
         try:
-            lean_statement = translate_fol_to_lean(
+            lean_statement = translate_statement(
                 fol_str=conj,
                 theorem_name=f"conjecture_run_{run_id}_timestep_{timestep}",
             )
@@ -311,7 +328,7 @@ def compute_reward_terms(
 
         # # Send the translated theorem to Lean and get the formal response
         try:
-            formal_response = check_theorem(
+            formal_response = check_statement(
                 lean_stmt=lean_statement, env_id=env_id, run_ts=timestep
             )
         except Exception as e:
@@ -654,6 +671,9 @@ class MathWorld(ParallelEnv):
             self.env_id = str(uuid.uuid4().hex)
 
         self.np_random, _ = seeding.np_random(seed)
+        if seed is not None:
+            np.random.seed(seed)
+            random.seed(seed)
 
         self.agents = copy(self.possible_agents)
         self.timestep = 0
@@ -1032,6 +1052,7 @@ class MathWorld(ParallelEnv):
         no_uniform_or_repeat = (
             abs(uniform_block_val) <= eps and abs(repeat_block_val) <= eps
         )
+        has_overlap = False  # only read when no_uniform_or_repeat is True
         if no_uniform_or_repeat:
             total_blocks = int(np.sum(list(blk_counts.values()))) if blk_counts else 0
             if total_blocks > 1:
