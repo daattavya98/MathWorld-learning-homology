@@ -1,0 +1,2 @@
+tier,episode,step,atomic_block,conjecture,formal_response
+silver,0,35,"equals(height_D2, rank_D2 + height_D1)","implies(equals(height_D2, rank_D2 + height_D1), logical_neg(equals(_1 + rank_D2, nullity_D1)))",0

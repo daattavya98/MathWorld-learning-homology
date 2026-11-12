@@ -1,0 +1,89 @@
+idx	arm	dataset	seed	flags
+0	c00_centre	D0	0	
+1	c00_centre	D0	1	
+2	c00_centre	D1	0	
+3	c00_centre	D1	1	
+4	c00_centre	D2	0	
+5	c00_centre	D2	1	
+6	c00_centre	D3	0	
+7	c00_centre	D3	1	
+8	c02_lra_x2	D0	0	--lr-actor 2e-3
+9	c02_lra_x2	D0	1	--lr-actor 2e-3
+10	c02_lra_x2	D1	0	--lr-actor 2e-3
+11	c02_lra_x2	D1	1	--lr-actor 2e-3
+12	c02_lra_x2	D2	0	--lr-actor 2e-3
+13	c02_lra_x2	D2	1	--lr-actor 2e-3
+14	c02_lra_x2	D3	0	--lr-actor 2e-3
+15	c02_lra_x2	D3	1	--lr-actor 2e-3
+16	c04_lrc_x2	D0	0	--lr-critic 2e-2
+17	c04_lrc_x2	D0	1	--lr-critic 2e-2
+18	c04_lrc_x2	D1	0	--lr-critic 2e-2
+19	c04_lrc_x2	D1	1	--lr-critic 2e-2
+20	c04_lrc_x2	D2	0	--lr-critic 2e-2
+21	c04_lrc_x2	D2	1	--lr-critic 2e-2
+22	c04_lrc_x2	D3	0	--lr-critic 2e-2
+23	c04_lrc_x2	D3	1	--lr-critic 2e-2
+24	c05_gamma_0.90	D0	0	--gamma 0.90
+25	c05_gamma_0.90	D0	1	--gamma 0.90
+26	c05_gamma_0.90	D1	0	--gamma 0.90
+27	c05_gamma_0.90	D1	1	--gamma 0.90
+28	c05_gamma_0.90	D2	0	--gamma 0.90
+29	c05_gamma_0.90	D2	1	--gamma 0.90
+30	c05_gamma_0.90	D3	0	--gamma 0.90
+31	c05_gamma_0.90	D3	1	--gamma 0.90
+32	c06_gamma_0.99	D0	0	--gamma 0.99
+33	c06_gamma_0.99	D0	1	--gamma 0.99
+34	c06_gamma_0.99	D1	0	--gamma 0.99
+35	c06_gamma_0.99	D1	1	--gamma 0.99
+36	c06_gamma_0.99	D2	0	--gamma 0.99
+37	c06_gamma_0.99	D2	1	--gamma 0.99
+38	c06_gamma_0.99	D3	0	--gamma 0.99
+39	c06_gamma_0.99	D3	1	--gamma 0.99
+40	c08_tau_x2	D0	0	--tau 0.02
+41	c08_tau_x2	D0	1	--tau 0.02
+42	c08_tau_x2	D1	0	--tau 0.02
+43	c08_tau_x2	D1	1	--tau 0.02
+44	c08_tau_x2	D2	0	--tau 0.02
+45	c08_tau_x2	D2	1	--tau 0.02
+46	c08_tau_x2	D3	0	--tau 0.02
+47	c08_tau_x2	D3	1	--tau 0.02
+48	c09_bs_32	D0	0	--batch-size 32
+49	c09_bs_32	D0	1	--batch-size 32
+50	c09_bs_32	D1	0	--batch-size 32
+51	c09_bs_32	D1	1	--batch-size 32
+52	c09_bs_32	D2	0	--batch-size 32
+53	c09_bs_32	D2	1	--batch-size 32
+54	c09_bs_32	D3	0	--batch-size 32
+55	c09_bs_32	D3	1	--batch-size 32
+56	c10_bs_128	D0	0	--batch-size 128
+57	c10_bs_128	D0	1	--batch-size 128
+58	c10_bs_128	D1	0	--batch-size 128
+59	c10_bs_128	D1	1	--batch-size 128
+60	c10_bs_128	D2	0	--batch-size 128
+61	c10_bs_128	D2	1	--batch-size 128
+62	c10_bs_128	D3	0	--batch-size 128
+63	c10_bs_128	D3	1	--batch-size 128
+64	c11_ou_off	D0	0	--no-ou-noise
+65	c11_ou_off	D0	1	--no-ou-noise
+66	c11_ou_off	D1	0	--no-ou-noise
+67	c11_ou_off	D1	1	--no-ou-noise
+68	c11_ou_off	D2	0	--no-ou-noise
+69	c11_ou_off	D2	1	--no-ou-noise
+70	c11_ou_off	D3	0	--no-ou-noise
+71	c11_ou_off	D3	1	--no-ou-noise
+72	c12_expl_x0.5	D0	0	--expl-noise 0.05
+73	c12_expl_x0.5	D0	1	--expl-noise 0.05
+74	c12_expl_x0.5	D1	0	--expl-noise 0.05
+75	c12_expl_x0.5	D1	1	--expl-noise 0.05
+76	c12_expl_x0.5	D2	0	--expl-noise 0.05
+77	c12_expl_x0.5	D2	1	--expl-noise 0.05
+78	c12_expl_x0.5	D3	0	--expl-noise 0.05
+79	c12_expl_x0.5	D3	1	--expl-noise 0.05
+80	c13_expl_x2	D0	0	--expl-noise 0.2
+81	c13_expl_x2	D0	1	--expl-noise 0.2
+82	c13_expl_x2	D1	0	--expl-noise 0.2
+83	c13_expl_x2	D1	1	--expl-noise 0.2
+84	c13_expl_x2	D2	0	--expl-noise 0.2
+85	c13_expl_x2	D2	1	--expl-noise 0.2
+86	c13_expl_x2	D3	0	--expl-noise 0.2
+87	c13_expl_x2	D3	1	--expl-noise 0.2

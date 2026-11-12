@@ -1,0 +1,2 @@
+episode,step,statement,diversity reward,formal reward,refuter reward
+6,0,"implies(conjunction(equals((rank_D2 + height_D1), width_D1), equals((width_D2 * nullity_D2), (height_D1 * _2))), equals(((height_D1 + width_D2) - width_D1), _2))",26.1,0.0,960.5024200970544

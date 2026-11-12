@@ -1,0 +1,23 @@
+episode,step,statement,diversity reward,formal reward,refuter reward
+3,0,"implies(conjunction(equals((_2 - rank_D1), (rank_D1 - nullity_D1)), equals((nullity_D1 - nullity_D2), (nullity_D2 * width_D2))), logical_neg(equals((_2 - rank_D1), (rank_D1 - nullity_D1))))",0.0,0.0,843.1719749477156
+3,1,"logical_neg(equals((rank_D1 * _2), (_1 + width_D2)))",4.158,0.0,1673.754230145954
+3,2,"equals(((_2 * rank_D2) - rank_D2), rank_D2)",0.0,0.0,2500.14708279221
+3,3,"logical_neg(conjunction(logical_neg(equals(width_D2, (rank_D2 - nullity_D1))), equals(width_D2, (rank_D2 - nullity_D1))))",0.0,0.0,3318.276006912004
+3,4,"equals(((nullity_D1 + _1) - rank_D2), _1)",4.322682045,0.0,4123.900959745599
+3,5,"logical_neg(equals((_0 - (_1 - rank_D2)), nullity_D1))",0.0,0.0,4923.053197203095
+3,6,"equals(rank_D1, ((rank_D2 - rank_D1) - nullity_D2))",4.2366606723045,0.0,5709.977251613712
+3,7,"equals((nullity_D1 + rank_D1), (width_D1 * nullity_D2))",4.194294065581454,0.0,6489.032065480223
+3,8,"logical_neg(equals(width_D2, (height_D1 - (_0 - _2))))",0.0,0.0,7264.4486823329935
+3,9,"logical_neg(equals(nullity_D2, (rank_D1 + (height_D1 - _1))))",0.0,0.0,8030.818679518145
+3,10,"equals((rank_D1 - width_D1), (_0 - nullity_D1))",0.0,0.0,8788.245806472161
+3,11,"logical_neg(equals(height_D2, ((height_D2 - nullity_D1) + width_D2)))",4.297623620441838,0.0,9533.801038536196
+3,12,"equals(_0, ((_2 + rank_D2) - width_D2))",3.9887319227225815,0.0,10272.166633741104
+3,13,"logical_neg(equals((rank_D2 - width_D1), _0))",0.0,0.0,11005.85477649185
+3,14,"logical_neg(conjunction(equals(((nullity_D1 - height_D2) + height_D2), height_D1), logical_neg(equals(((nullity_D1 - height_D2) + height_D2), height_D1))))",0.0,0.0,11732.206037815087
+3,15,"equals(((_2 - width_D2) + height_D2), rank_D1)",3.870262595885798,0.0,12447.423523929208
+3,16,"equals((_0 - ((_0 - width_D1) - (_2 - _2))), height_D2)",0.0,0.0,13159.320395152112
+3,17,"logical_neg(equals(((_2 * _2) - width_D1), rank_D1))",0.0,0.0,13862.9044361962
+3,18,"logical_neg(equals(_1, (width_D2 - nullity_D1)))",4.00566605496042,0.0,14555.446970774885
+3,19,"logical_neg(equals(_0, (nullity_D1 - width_D2)))",3.965609394410816,0.0,15241.064080007784
+3,20,"logical_neg(conjunction(logical_neg(equals((_2 + (nullity_D1 - _1)), rank_D2)), equals((_2 + (nullity_D1 - _1)), rank_D2)))",0.0,0.0,15923.75097144882
+3,21,"equals(width_D2, (height_D2 - height_D1))",3.6437754069956623,0.0,16595.96721856845

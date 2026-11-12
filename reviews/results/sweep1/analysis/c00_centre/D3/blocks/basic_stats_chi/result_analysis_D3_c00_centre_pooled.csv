@@ -1,0 +1,5 @@
+tier,total_blocks,unique_blocks,pct_total_blocks,pct_unique_blocks
+overall,707,578,100.0,100.0
+gold,6,4,0.8487,0.692
+silver,8,5,1.1315,0.8651
+bronze,2,2,0.2829,0.346

@@ -1,0 +1,10 @@
+sphere_data.csv	sphere_data.csv	2	1	1
+torus_data.csv	torus_data.csv	0	1	1
+klein_data.csv	klein_bottle_data.csv	0	1	0
+sphere_plus_sphere_data.csv	genus_0_plus_0_dataset_combined_final.csv	4	2	2
+torus_plus_sphere_data.csv	genus_1_plus_0_dataset_combined.csv	2	2	2
+torus_plus_torus_data.csv	genus_1_plus_1_dataset_combined.csv	0	2	2
+klein_plus_klein_data.csv	klein_plus_klein_dataset.csv	0	2	0
+klein_plus_torus_data.csv	klein_plus_torus_dataset.csv	0	2	1
+klein_plus_sphere_data.csv	klein_plus_sphere_dataset.csv	2	2	1
+klein_plus_torus_plus_sphere_data.csv	klein_plus_torus_plus_sphere_data.csv	2	3	2

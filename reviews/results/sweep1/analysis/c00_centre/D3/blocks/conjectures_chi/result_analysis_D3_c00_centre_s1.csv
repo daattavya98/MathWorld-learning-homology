@@ -1,0 +1,5 @@
+tier,episode,step,atomic_block,conjecture,formal_response
+bronze,7,6,"equals(nullity_D1 - (width_D2 - rank_D1), height_D1)","logical_neg(equals(nullity_D1 - (width_D2 - rank_D1), height_D1))",0
+gold,4,40,"equals(height_D2 - height_D1, width_D2)","logical_neg(equals(height_D2 - height_D1, width_D2))",0
+gold,7,14,"equals(_0, (width_D2 + height_D1) - height_D2)","implies(logical_neg(equals(height_D1 + (nullity_D1 * nullity_D2), height_D1)), implies(logical_neg(equals(_0, (width_D2 + height_D1) - height_D2)), logical_neg(equals(rank_D2 - rank_D2, nullity_D2 * nullity_D2))))",1
+silver,0,22,"equals(rank_D2, height_D2 + (nullity_D2 - height_D1))","logical_neg(conjunction(equals(rank_D2, height_D2 + (nullity_D2 - height_D1)), equals(width_D2 + width_D2, height_D1 + width_D1)))",0

@@ -1,0 +1,9 @@
+tier,episode,step,atomic_block,conjecture,formal_response
+gold,0,4,"equals((width_D2 + height_D1) + _0, width_D1)","implies(conjunction(equals(nullity_D2, (height_D1 - height_D2) + rank_D2), equals((width_D2 + height_D1) + _0, width_D1)), logical_neg(conjunction(equals(nullity_D2, (height_D1 - height_D2) + rank_D2), equals(nullity_D2 * (height_D1 + rank_D1), rank_D2))))",0
+gold,8,33,"equals(width_D2 + height_D1, width_D1)","equals(width_D2 + height_D1, width_D1)",0
+gold,9,10,"equals(_1 * height_D2, width_D2 + height_D1)","equals(_1 * height_D2, width_D2 + height_D1)",0
+silver,0,4,"equals(nullity_D2, (height_D1 - height_D2) + rank_D2)","implies(conjunction(equals(nullity_D2, (height_D1 - height_D2) + rank_D2), equals((width_D2 + height_D1) + _0, width_D1)), logical_neg(conjunction(equals(nullity_D2, (height_D1 - height_D2) + rank_D2), equals(nullity_D2 * (height_D1 + rank_D1), rank_D2))))",0
+silver,0,4,"equals(nullity_D2, (height_D1 - height_D2) + rank_D2)","implies(conjunction(equals(nullity_D2, (height_D1 - height_D2) + rank_D2), equals((width_D2 + height_D1) + _0, width_D1)), logical_neg(conjunction(equals(nullity_D2, (height_D1 - height_D2) + rank_D2), equals(nullity_D2 * (height_D1 + rank_D1), rank_D2))))",0
+silver,1,9,"equals(width_D1 + _1, rank_D2 + height_D1)","equals(width_D1 + _1, rank_D2 + height_D1)",0
+silver,6,2,"equals(rank_D2, nullity_D2 + (width_D1 - height_D1))","implies(conjunction(equals(_1 * nullity_D1, width_D2 + nullity_D2), equals(rank_D2, nullity_D2 + (width_D1 - height_D1))), logical_neg(equals(width_D1, (height_D2 - height_D1) * width_D1)))",0
+silver,7,8,"equals(rank_D2 + nullity_D2, width_D1 - height_D1)","implies(equals(_0, rank_D1), conjunction(equals(height_D2 - rank_D1, width_D2 - _1), equals(rank_D2 + nullity_D2, width_D1 - height_D1)))",0

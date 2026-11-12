@@ -1,0 +1,2 @@
+episode,step,statement,diversity reward,formal reward,refuter reward
+10,0,"implies(logical_neg(equals(rank_D2, (width_D1 - height_D1))), logical_neg(equals(height_D1, ((_0 - rank_D2) + width_D1))))",15.0,150.0,965.0584069351694

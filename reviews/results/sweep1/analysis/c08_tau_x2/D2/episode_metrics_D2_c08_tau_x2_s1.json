@@ -1,0 +1,174 @@
+{
+ "A": {
+  "episode_stats": {
+   "chi_usage_ep": [
+    0.012304887498874418,
+    [
+     0.0037735849056603774,
+     0.0210337852148625
+    ],
+    2.8711313672717798
+   ],
+   "chi_breadth_ep": [
+    0.012304887498874418,
+    [
+     0.0037735849056603774,
+     0.0210337852148625
+    ],
+    2.8711313672717798
+   ],
+   "hom_usage_ep": [
+    0.014351671124605411,
+    [
+     0.005335068314899154,
+     0.024179148895154094
+    ],
+    2.897748763997096
+   ],
+   "hom_breadth_ep": [
+    0.014351671124605411,
+    [
+     0.005335068314899154,
+     0.024179148895154094
+    ],
+    2.897748763997096
+   ],
+   "proven_rate_ep": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_with_hom_rate_ep": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_with_chi_rate_ep": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_diverse_chi_breadth_ep": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_diverse_hom_breadth_ep": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_diverse_ch_or_hom_breadth_ep": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ]
+  },
+  "pooled_stats": {
+   "chi_usage_pooled": [
+    0.012915129151291513,
+    [
+     0.0038910505836575876,
+     0.021583706008166427
+    ],
+    2.954136301434773
+   ],
+   "hom_usage_pooled": [
+    0.014760147601476014,
+    [
+     0.0055762081784386614,
+     0.024562482656553496
+    ],
+    2.974824861890114
+   ],
+   "chi_breadth_global": [
+    0.013461538461538462,
+    [
+     0.005747126436781609,
+     0.019230769230769232
+    ],
+    3.8202816247956273
+   ],
+   "hom_breadth_global": [
+    0.015384615384615385,
+    [
+     0.007380073800738007,
+     0.022641509433962263
+    ],
+    3.863554696512509
+   ],
+   "proven_rate_global": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_with_chi_rate_global": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_with_hom_rate_global": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_diverse_chi_breadth_global": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_diverse_hom_breadth_global": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ],
+   "proven_diverse_ch_or_hom_breadth_global": [
+    NaN,
+    [
+     NaN,
+     NaN
+    ],
+    NaN
+   ]
+  },
+  "steps_median": 50.0,
+  "steps_q1_q3": [
+   50.0,
+   50.0
+  ],
+  "num_episodes": 10
+ }
+}

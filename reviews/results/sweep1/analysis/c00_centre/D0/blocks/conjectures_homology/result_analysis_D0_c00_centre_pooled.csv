@@ -1,0 +1,4 @@
+tier,betti_type,episode,step,atomic_block,conjecture,formal_response
+gold,b1,1003,31,"equals(height_D1, rank_D2 - (nullity_D1 - height_D1))","equals(height_D1, rank_D2 - (nullity_D1 - height_D1))",0
+gold,b1,1004,1,"equals((width_D1 - nullity_D1) + rank_D2, width_D1)","implies(conjunction(equals((width_D1 - nullity_D1) + rank_D2, width_D1), equals(_1 + rank_D1, width_D2 - height_D1)), logical_neg(conjunction(equals(_1 + rank_D1, width_D2 - height_D1), equals((width_D2 - nullity_D1) * width_D2, width_D2))))",0
+gold,b1,1009,1,"equals(rank_D2, _1 * nullity_D1)","equals(rank_D2, _1 * nullity_D1)",0

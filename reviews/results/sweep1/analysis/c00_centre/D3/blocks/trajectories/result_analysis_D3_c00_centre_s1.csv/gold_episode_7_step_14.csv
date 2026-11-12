@@ -1,0 +1,16 @@
+episode,step,statement,diversity reward,formal reward,refuter reward
+7,0,"equals(_1 * (width_D1 - _0), height_D2)",0.0,0.0,11002.160186360228
+7,1,"equals(rank_D2 + (nullity_D2 - ((_0 + _0) - _0)), width_D2)",0.0,0.0,21894.29877085685
+7,2,"logical_neg(conjunction(equals((height_D1 + width_D1) - nullity_D1, nullity_D1), equals(width_D2 + (rank_D1 * _0), nullity_D1)))",0.0,0.0,32677.515969508517
+7,3,"logical_neg(conjunction(equals(_0, nullity_D2 * (height_D1 + width_D2)), equals(_0 + height_D2, width_D1 * nullity_D2)))",0.0,0.0,43352.90099617366
+7,4,"equals(nullity_D1 + (_0 + rank_D1), height_D2)",0.0,0.0,53921.53217257215
+7,5,"logical_neg(equals(nullity_D2 + width_D1, _0 + width_D1))",213.9727612275,0.0,64170.504275979154
+7,6,"logical_neg(equals(nullity_D1 - (width_D2 - rank_D1), height_D1))",223.130795408037,0.0,74305.68889655928
+7,7,"logical_neg(conjunction(equals(_1, _1 + (nullity_D2 - _1)), equals(height_D2, width_D1 - nullity_D2)))",0.0,0.0,84560.42115838756
+7,8,"logical_neg(conjunction(equals(_1 * rank_D1, nullity_D1 - height_D1), equals(nullity_D2, (_0 * rank_D2) + _0)))",0.0,0.0,94712.60609759756
+7,9,"logical_neg(equals(nullity_D2, (height_D2 - rank_D1) - rank_D2))",211.02248416872104,0.0,104552.24670324672
+7,10,"logical_neg(equals(nullity_D2, nullity_D1 - (rank_D2 + _0)))",214.33855177708665,0.0,114288.06461038937
+7,11,"logical_neg(equals(nullity_D2, (_1 - _1) * rank_D1))",217.5671957848681,0.0,123921.152308935
+7,12,"implies(logical_neg(equals(nullity_D2 + height_D1, width_D2 - height_D1)), logical_neg(conjunction(equals(height_D2 + (rank_D1 - width_D2), rank_D2), equals(_0, rank_D1 * (nullity_D1 - rank_D2)))))",0.0,0.0,133673.30065432223
+7,13,"logical_neg(equals(rank_D2, width_D2 - (nullity_D2 * height_D1)))",202.7073563127616,0.0,143125.2201599428
+7,14,"implies(logical_neg(equals(height_D1 + (nullity_D1 * nullity_D2), height_D1)), implies(logical_neg(equals(_0, (width_D2 + height_D1) - height_D2)), logical_neg(equals(rank_D2 - rank_D2, nullity_D2 * nullity_D2))))",216.3177073794756,130.31187191534673,152462.6393168135

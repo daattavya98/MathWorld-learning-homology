@@ -1,0 +1,3 @@
+node=cpu-q-370 job=40434223 task=3 cpus=4
+prover=grind julia_threads=4 profile=D3
+start=2026-11-09T14:12:38+00:00

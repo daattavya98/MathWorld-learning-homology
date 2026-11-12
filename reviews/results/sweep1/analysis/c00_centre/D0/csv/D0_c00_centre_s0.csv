@@ -1,0 +1,501 @@
+episode,step,conjecture,uniform_block_val,repeat_block_val,formal_response,rew_conj_formal,rew_conj_uniform,rew_conj_length,reward_ref
+0,0,"equals(_1, nullity_D2)",1.0,0.0,0,0.0,1.125,0.0,2162.091642097435
+0,1,"equals(_0 + ((rank_D1 + nullity_D1) + _0), height_D2)",1.0,0.0,0,0.0,-0.003712500000000031,0.0,4290.4244086427025
+0,2,"implies(logical_neg(equals(nullity_D1 * height_D1, nullity_D2)), logical_neg(equals(nullity_D1 * height_D1, nullity_D2)))",1.0,0.3,0,0.0,-0.007313996250000038,0.0,6391.441689378198
+0,3,"logical_neg(implies(logical_neg(equals(nullity_D2, height_D1 + (_1 - nullity_D1))), equals(nullity_D2, height_D1 + (_1 - nullity_D1))))",1.0,0.3,0,0.0,-0.010807068974624965,0.0,8471.419004014018
+0,4,"implies(logical_neg(equals(_0, rank_D1 * nullity_D2)), logical_neg(equals(_0, rank_D1 * nullity_D2)))",1.0,0.3,0,0.0,-0.014194243339529955,0.0,10530.821392826982
+0,5,"equals(height_D2, (width_D1 - _0) - _0)",1.0,0.0,0,0.0,-0.01747799058419832,0.0,12583.720607051395
+0,6,"logical_neg(implies(logical_neg(equals(rank_D1 - height_D1, width_D2 * rank_D2)), equals(rank_D1 - height_D1, width_D2 * rank_D2)))",1.0,0.3,0,0.0,-0.020660729131826507,0.0,14616.484111189653
+0,7,"implies(logical_neg(equals(nullity_D2 + _0, nullity_D1 + height_D2)), logical_neg(equals(nullity_D2 + _0, nullity_D1 + height_D2)))",1.0,0.3,0,0.0,-0.023744825676754424,0.0,16612.10117881022
+0,8,"equals(_1, height_D2 + ((rank_D2 - ((height_D2 + rank_D2) - _1)) + (rank_D1 - rank_D1)))",1.0,0.0,0,0.0,-0.02673259624989171,0.0,18598.846103390853
+0,9,"logical_neg(implies(logical_neg(equals(width_D2, (height_D1 - nullity_D2) - nullity_D1)), equals(width_D2, (height_D1 - nullity_D2) - nullity_D1)))",1.0,0.3,0,0.0,-0.029626307262582505,0.0,20560.08526928334
+0,10,"implies(logical_neg(equals(width_D1 * (rank_D2 - _0), height_D1)), logical_neg(equals(width_D1 * (rank_D2 - _0), height_D1)))",1.0,0.3,0,0.0,-0.032428176529340144,0.0,22515.31664307024
+0,11,"logical_neg(implies(logical_neg(equals(rank_D1 - (width_D2 * _0), nullity_D2)), equals(rank_D1 - (width_D2 * _0), nullity_D2)))",1.0,0.3,0,0.0,-0.035140374269876457,0.0,24431.933330817646
+0,12,"implies(logical_neg(equals(_1 + (_1 + height_D1), width_D2)), logical_neg(equals(_1 + (_1 + height_D1), width_D2)))",1.0,0.3,0,0.0,-0.03776502409084137,0.0,26353.708808781994
+0,13,"implies(logical_neg(equals(_1 + nullity_D1, height_D2 + width_D2)), logical_neg(equals(_1 + nullity_D1, height_D2 + width_D2)))",1.0,0.3,0,0.0,-0.0403042039476798,0.0,28235.386930026154
+0,14,"equals((width_D1 + (_0 + _0)) + (_0 + _0), height_D2)",1.0,0.0,0,0.0,-0.0427599470870046,0.0,30103.240706440167
+0,15,"implies(logical_neg(equals((width_D2 * rank_D2) - nullity_D2, width_D2)), logical_neg(equals((width_D2 * rank_D2) - nullity_D2, width_D2)))",1.0,0.3,0,0.0,-0.04513424296987805,0.0,31968.007045630176
+0,16,"implies(logical_neg(equals(_1 * (_0 - _1), rank_D2)), logical_neg(equals(_1 * (_0 - _1), rank_D2)))",1.0,0.3,0,0.0,-0.04742903817638327,0.0,33793.60704755938
+0,17,"implies(logical_neg(equals(_1 * (width_D2 - height_D2), rank_D2)), logical_neg(equals(_1 * (width_D2 - height_D2), rank_D2)))",1.0,0.3,0,0.0,-0.04964623729186297,0.0,35610.76004836614
+0,18,"implies(logical_neg(equals(nullity_D1, width_D1 + (_1 + _0))), logical_neg(equals(nullity_D1, width_D1 + (_1 + _0))))",1.0,0.3,0,0.0,-0.05178770377519271,0.0,37410.35579453314
+0,19,"implies(logical_neg(equals(rank_D2, (nullity_D2 + width_D2) + nullity_D1)), logical_neg(equals(rank_D2, (nullity_D2 + width_D2) + nullity_D1)))",1.0,0.3,0,0.0,-0.053855260809449856,0.0,39181.687013072325
+0,20,"implies(logical_neg(equals(_0, rank_D2 * (nullity_D1 - height_D2))), logical_neg(equals(_0, rank_D2 * (nullity_D1 - height_D2))))",1.0,0.3,0,0.0,-0.055850692135331406,0.0,40927.781666826166
+0,21,"implies(logical_neg(equals(rank_D2 - rank_D1, height_D1 * rank_D2)), logical_neg(equals(rank_D2 - rank_D1, height_D1 * rank_D2)))",1.0,0.3,0,0.0,-0.05777574286766805,0.0,42656.57102582653
+0,22,"implies(logical_neg(equals((_1 + nullity_D2) + width_D2, height_D2)), logical_neg(equals((_1 + nullity_D2) + width_D2, height_D2)))",1.0,0.3,0,0.0,-0.05963212029537286,0.0,44382.61883643896
+0,23,"implies(logical_neg(equals(width_D1 + (_0 + height_D1), nullity_D2)), logical_neg(equals(width_D1 + (_0 + height_D1), nullity_D2)))",1.0,0.3,0,0.0,-0.061421494665158664,0.0,46086.771113421426
+0,24,"implies(logical_neg(equals(_1, (_0 - width_D2) + ((width_D2 - (width_D2 - rank_D2)) + width_D2))), logical_neg(equals(_1, (_0 - width_D2) + ((width_D2 - (width_D2 - rank_D2)) + width_D2))))",1.0,0.3,0,0.0,-0.06314549994934908,0.0,47771.02116464164
+0,25,"logical_neg(implies(logical_neg(equals(rank_D1, width_D1 - (width_D2 * rank_D2))), equals(rank_D1, width_D1 - (width_D2 * rank_D2))))",1.0,0.3,0,0.0,-0.06480573459810383,0.0,49431.94644440974
+0,26,"logical_neg(implies(equals(width_D2, (height_D1 - rank_D2) * rank_D1), logical_neg(equals(width_D2, (height_D1 - rank_D2) * rank_D1))))",1.0,0.3,0,0.0,-0.06640376227637089,0.0,51078.402589901765
+0,27,"implies(equals(nullity_D1, _1 - (width_D2 * _0)), logical_neg(equals(nullity_D1, _1 - (width_D2 * _0))))",1.0,0.3,0,0.0,-0.06794111258587276,0.0,52717.271012702346
+0,28,"implies(logical_neg(equals(rank_D1 + _0, width_D2 - width_D2)), logical_neg(equals(rank_D1 + _0, width_D2 - width_D2)))",1.0,0.3,0,0.0,-0.06941928177242751,0.0,54349.06563893157
+0,29,"logical_neg(implies(logical_neg(equals(width_D2, (width_D1 - width_D1) * height_D1)), equals(rank_D2 + width_D2, _1 - rank_D1)))",2.0,0.0,0,0.0,-0.14062300073738265,0.0,55951.34724152776
+0,30,"logical_neg(implies(equals((rank_D2 + rank_D1) + rank_D2, width_D1), equals((rank_D2 + rank_D1) + rank_D2, width_D1)))",1.0,0.3,0,0.0,0.020258647549465374,0.0,57537.384297864286
+0,31,"implies(equals(nullity_D1 - _0, nullity_D1 + nullity_D2), logical_neg(equals(nullity_D1 - _0, nullity_D1 + nullity_D2)))",1.0,0.3,0,0.0,-0.07351317916770465,0.0,59111.68758895717
+0,32,"logical_neg(implies(equals(width_D1 - height_D1, rank_D1 + height_D2), equals(width_D1 - height_D1, rank_D1 + height_D2)))",1.0,0.3,0,0.0,-0.07476894316210929,0.0,60677.33731227503
+0,33,"logical_neg(implies(equals(width_D1 + height_D1, height_D2 - nullity_D2), logical_neg(equals((rank_D1 + nullity_D2) + nullity_D1, height_D1))))",2.0,0.0,0,0.0,-0.14036467036840225,0.0,62224.97415758574
+0,34,"logical_neg(implies(equals(rank_D2 * width_D1, rank_D1), equals(_0 + _1, _1 * width_D2)))",2.0,0.0,0,0.0,-0.026172540181952156,0.0,63784.58730701862
+0,35,"implies(equals(height_D2, rank_D2 + height_D1), logical_neg(equals(_1 + rank_D2, nullity_D1)))",2.0,0.0,0,0.0,-0.06258271061980869,0.0,65318.15185997549
+0,36,"logical_neg(implies(equals((_1 * nullity_D1) - width_D1, width_D2), equals((_1 * nullity_D1) - width_D1, width_D2)))",1.0,0.3,0,0.0,-0.01492741730520694,0.0,66834.20093223992
+0,37,"implies(equals(height_D2, rank_D2 + width_D1), logical_neg(equals(height_D2, rank_D2 + width_D1)))",1.0,0.3,0,0.0,-0.08564361754534834,0.0,68343.5025240834
+0,38,"implies(equals(height_D2, height_D2 - (width_D1 - nullity_D1)), logical_neg(equals(height_D2, height_D2 - (width_D1 - nullity_D1))))",1.0,0.3,0,0.0,-0.08666952793623744,0.0,69835.49599565771
+0,39,"implies(logical_neg(equals(width_D2, width_D1 + rank_D1)), equals(width_D2, width_D1 + rank_D1))",1.0,0.3,0,0.0,-0.08764772052654746,0.0,71308.4921548276
+0,40,"implies(equals(height_D2 + nullity_D1, height_D1), logical_neg(nullity_D1 + (width_D1 - width_D1)))",2.0,0.0,0,0.0,-0.13333173929872894,0.0,72770.85403247981
+0,41,"implies(equals((width_D2 * width_D1) - width_D2, rank_D2), logical_neg((width_D2 + rank_D1) - nullity_D2))",2.0,0.0,0,0.0,-0.06709936175222181,0.0,74216.7462924304
+0,42,"implies(equals(_0 - nullity_D1, nullity_D2), logical_neg(equals(_0 - nullity_D1, nullity_D2)))",1.0,0.3,0,0.0,-0.024742160762685667,0.0,75640.31448415853
+0,43,"implies(logical_neg(equals(_0, width_D2)), logical_neg(equals(width_D1 + rank_D2, nullity_D2)))",2.0,0.0,0,0.0,-0.13324078470093048,0.0,77059.3877571044
+0,44,"logical_neg(implies(height_D2 - height_D2, equals(width_D1, rank_D2)))",2.0,0.0,0,0.0,-0.068898579285249,0.0,78466.07622885413
+0,45,"logical_neg(implies(equals(width_D1, height_D1), logical_neg(equals(height_D2, _1 + rank_D2))))",2.0,0.0,0,0.0,-0.06943605401566415,0.0,79856.7743881744
+0,46,"implies(logical_neg(equals(_0 + _1, width_D1 + nullity_D2)), logical_neg(equals(rank_D2, height_D2)))",2.0,0.0,0,0.0,-0.06994374743436213,0.0,81229.83003150739
+0,47,"logical_neg(implies(equals(rank_D1 + nullity_D2, _0), logical_neg(equals(rank_D1 + nullity_D2, _0))))",1.0,0.3,0,0.0,-0.03154405123766923,0.0,82591.08762599702
+0,48,"logical_neg(implies(equals(height_D1, nullity_D2 + height_D2), logical_neg(equals(rank_D1, height_D1))))",2.0,0.0,0,0.0,-0.1326019209455503,0.0,83938.60706906207
+0,49,"implies(equals(nullity_D1, height_D2 * (nullity_D1 - nullity_D1)), equals(nullity_D2 + rank_D1, height_D2))",2.0,0.0,0,0.0,-0.07129588772357875,0.0,85267.42071736722
+1,0,"equals(width_D1, rank_D1 + (_0 + nullity_D1))",1.0,0.0,0,0.0,1.5,0.0,2087.0495540110305
+1,1,"equals(nullity_D2 * (_0 + nullity_D2), nullity_D2)",1.0,0.0,0,0.0,-0.0033000000000000212,0.0,4147.503567454383
+1,2,"implies(logical_neg(equals(width_D2 * width_D2, width_D1 - width_D1)), logical_neg(equals(width_D2 * width_D2, width_D1 - width_D1)))",1.0,0.3,0,0.0,-0.006501329999999991,0.0,6195.694998905521
+1,3,"logical_neg(implies(logical_neg(equals(height_D2 - rank_D2, width_D2)), equals(height_D2 - rank_D2, width_D2)))",1.0,0.3,0,0.0,-0.00960628353300001,0.0,8206.3463424831
+1,4,"implies(logical_neg(equals(nullity_D2, (nullity_D2 - height_D2) - nullity_D2)), logical_neg(equals(nullity_D2, (nullity_D2 - height_D2) - nullity_D2)))",1.0,0.3,0,0.0,-0.012617105190693317,0.0,10208.536402086329
+1,5,"logical_neg(implies(logical_neg(equals(nullity_D1 + rank_D2, rank_D1 + _0)), equals(nullity_D1 + rank_D2, rank_D1 + _0)))",1.0,0.3,0,0.0,-0.015535991630398512,0.0,12190.711580783083
+1,6,"equals(_0 + height_D2, ((rank_D1 + nullity_D1) + _0) + _0)",1.0,0.0,0,0.0,-0.018365092561623556,0.0,14141.104669113522
+1,7,"equals(height_D2 + (width_D2 - width_D1), width_D2)",1.0,0.0,0,0.0,-0.02110651171267057,0.0,16086.516089628996
+1,8,"equals((_1 + width_D2) - ((width_D1 + (nullity_D1 - width_D2)) - width_D2), rank_D1 + nullity_D2)",1.0,0.0,0,0.0,-0.023762307777681513,0.0,17984.67789148765
+1,9,"equals(_0, _0 + (height_D2 - (((height_D1 + height_D2) - nullity_D1) + (nullity_D1 - height_D1))))",1.0,0.0,0,0.0,-0.026334495344517782,0.0,19877.16294087318
+1,10,"implies(logical_neg(equals(nullity_D1 + _0, _1 + nullity_D2)), logical_neg(equals(nullity_D1 + _0, _1 + nullity_D2)))",1.0,0.3,0,0.0,-0.02882504580385791,0.0,21742.68424596455
+1,11,"equals(height_D1 + (rank_D1 - ((_1 + (rank_D1 + height_D2)) - nullity_D1)), rank_D2 - rank_D2)",1.0,0.0,0,0.0,-0.031235888239890156,0.0,23576.716739656265
+1,12,"implies(logical_neg(equals(rank_D1 - _1, width_D1 * height_D2)), logical_neg(equals(rank_D1 - _1, width_D1 * height_D2)))",1.0,0.3,0,0.0,-0.03356891030297012,0.0,25411.077847434426
+1,13,"logical_neg(implies(logical_neg(equals(_1 + rank_D2, nullity_D1 + width_D2)), equals(_1 + rank_D2, nullity_D1 + width_D2)))",1.0,0.3,0,0.0,-0.035825959064604264,0.0,27224.11996472068
+1,14,"logical_neg(implies(logical_neg(equals(_1 + _1, _0 - height_D2)), equals(_1 + _1, _0 - height_D2)))",1.0,0.3,0,0.0,-0.038008841855115216,0.0,29032.026988004432
+1,15,"equals(nullity_D1 - ((width_D1 - (_1 + _1)) - height_D1), _1 + (_1 + _1))",1.0,0.0,0,0.0,-0.04011932708433607,0.0,30796.56878775161
+1,16,"implies(logical_neg(equals((height_D2 - _0) * rank_D2, _1)), logical_neg(equals((height_D2 - _0) * rank_D2, _1)))",1.0,0.3,0,0.0,-0.04215914504567404,0.0,32561.118013613628
+1,17,"implies(logical_neg(equals((_0 * width_D1) - nullity_D1, height_D1)), logical_neg(equals((_0 * width_D1) - nullity_D1, height_D1)))",1.0,0.3,0,0.0,-0.04412998870387822,0.0,34290.07528088847
+1,18,"implies(logical_neg(equals(nullity_D2, (nullity_D2 - width_D1) - nullity_D1)), logical_neg(equals(nullity_D2, (nullity_D2 - width_D1) - nullity_D1)))",1.0,0.3,0,0.0,-0.04603351446683797,0.0,36014.40094621839
+1,19,"equals((width_D1 - ((_0 - ((_0 + _0) + _0)) - _0)) + _0, height_D2)",1.0,0.0,0,0.0,-0.047871342941733175,0.0,37716.82437197734
+1,20,"implies(logical_neg(equals(_1, rank_D2 + nullity_D1)), logical_neg(equals(_1, rank_D2 + nullity_D1)))",1.0,0.3,0,0.0,-0.04964505967585014,0.0,39421.9329148595
+1,21,"equals((((width_D1 + height_D2) + _1) - (width_D1 + rank_D1)) - (nullity_D1 - _0), nullity_D2)",1.0,0.0,0,0.0,-0.051356215882371575,0.0,41095.18627998803
+1,22,"implies(logical_neg(equals((rank_D2 - nullity_D1) * height_D2, width_D1)), logical_neg(equals((rank_D2 - nullity_D1) * height_D2, width_D1)))",1.0,0.3,0,0.0,-0.05300632915144256,0.0,42759.217129147015
+1,23,"implies(logical_neg(equals(rank_D1 + nullity_D2, rank_D1 + width_D1)), logical_neg(equals(height_D2 - rank_D1, height_D1 * height_D1)))",2.0,0.0,0,0.0,-0.1595674893473464,0.0,44392.496049887326
+1,24,"logical_neg(implies(logical_neg(equals(nullity_D1 * nullity_D2, _0 - nullity_D2)), equals(nullity_D1 * nullity_D2, _0 - nullity_D2)))",1.0,0.3,0,0.0,0.07481702351289282,0.0,45995.149495089194
+1,25,"equals(width_D2 - (rank_D2 + _0), _1)",1.0,0.0,0,0.0,-0.05760509742053672,0.0,47612.272795967714
+1,26,"implies(logical_neg(equals(width_D2 * _1, rank_D2)), logical_neg(equals(width_D2 * _1, rank_D2)))",1.0,0.3,0,0.0,-0.03431863120115607,0.0,49270.33039712743
+1,27,"logical_neg(implies(logical_neg(equals(_0 - width_D2, height_D1 + rank_D1)), equals(_0 - width_D2, height_D1 + rank_D1)))",1.0,0.3,0,0.0,-0.06794111258587276,0.0,50902.517400424484
+1,28,"logical_neg(implies(equals(height_D2 * height_D2, width_D1), equals(height_D2 * height_D2, width_D1)))",1.0,0.3,0,0.0,-0.06941928177242751,0.0,52529.48419735316
+1,29,"logical_neg(implies(equals(nullity_D2, nullity_D1 + nullity_D1), equals(nullity_D2, nullity_D1 + nullity_D1)))",1.0,0.3,0,0.0,-0.07083973341889971,0.0,54124.60972649364
+1,30,"implies(equals(nullity_D1 - (width_D1 + nullity_D1), rank_D1), logical_neg(equals(nullity_D1 - (width_D1 + nullity_D1), rank_D1)))",1.0,0.3,0,0.0,-0.07220389912406966,0.0,55710.621500209214
+1,31,"implies(equals(height_D1, height_D2 + (width_D1 - rank_D1)), logical_neg(equals(height_D1, height_D2 + (width_D1 - rank_D1))))",1.0,0.3,0,0.0,-0.07351317916770465,0.0,57272.065710369236
+1,32,"implies(equals(height_D1, nullity_D2 + height_D2), logical_neg(equals(height_D1, nullity_D2 + height_D2)))",1.0,0.3,0,0.0,-0.07476894316210929,0.0,58809.01966603471
+1,33,"implies(logical_neg(equals(width_D1 + height_D2, nullity_D1)), logical_neg(equals(width_D1 + height_D2, nullity_D1)))",1.0,0.3,0,0.0,-0.07597253069042682,0.0,60360.80690008276
+1,34,"logical_neg(implies(equals(height_D2 * width_D1, rank_D1), equals(height_D2 * width_D1, rank_D1)))",1.0,0.3,0,0.0,-0.07712525193195845,0.0,61897.13450824272
+1,35,"logical_neg(implies(logical_neg(equals(nullity_D2 + width_D2, width_D2 - width_D2)), equals(nullity_D2 + width_D2, width_D2 - width_D2)))",1.0,0.3,0,0.0,-0.07822838827476085,0.0,63413.70910139221
+1,36,"implies(equals(rank_D2, height_D1 * rank_D2), logical_neg(equals(_0 + _0, nullity_D2 + rank_D1)))",2.0,0.0,0,0.0,-0.13990711420004937,0.0,64927.927567372266
+1,37,"logical_neg(implies(equals(nullity_D1 + nullity_D1, rank_D1 * rank_D2), equals(nullity_D1 + nullity_D1, rank_D1 * rank_D2)))",1.0,0.3,0,0.0,0.005890244284870648,0.0,66410.70524159209
+1,38,"logical_neg(implies(equals(height_D2 + _1, nullity_D1 + rank_D2), equals(height_D2 + _1, nullity_D1 + rank_D2)))",1.0,0.3,0,0.0,-0.08125268244022259,0.0,67882.22002007859
+1,39,"logical_neg(implies(width_D2 - rank_D2, width_D2 - rank_D2))",1.0,0.3,0,0.0,-0.08216973799363822,0.0,69334.88982117744
+1,40,"implies(height_D2 - (nullity_D2 + width_D2), logical_neg(height_D2 - (nullity_D2 + width_D2)))",1.0,0.3,0,0.0,-0.08304320430220113,0.0,70763.07207446249
+1,41,"implies(logical_neg(equals(_1, nullity_D1)), logical_neg(equals(nullity_D2, (_1 + rank_D1) + width_D1)))",2.0,0.0,0,0.0,-0.13870138991651612,0.0,72197.04180091973
+1,42,"logical_neg(implies(equals(width_D1, rank_D1), logical_neg(_0 - (_0 - _0))))",2.0,0.0,0,0.0,-0.05644255176256253,0.0,73605.08044583666
+1,43,"implies(logical_neg(equals(nullity_D2, width_D1)), logical_neg(rank_D2 - rank_D2))",2.0,0.0,0,0.0,-0.056942101553408536,0.0,74996.57067595425
+1,44,"implies(equals(rank_D2 - nullity_D1, width_D1 * width_D1), logical_neg(equals(_0, height_D2)))",2.0,0.0,0,0.0,-0.0574154827377075,0.0,76389.53196838428
+1,45,"implies(logical_neg(equals(_1, height_D1 + (height_D1 + _1))), equals(nullity_D2, nullity_D1))",2.0,0.0,0,0.0,-0.0578633783463868,0.0,77770.63207721575
+1,46,"logical_neg(implies(equals(height_D2, rank_D2), equals(height_D2, rank_D2)))",1.0,0.3,0,0.0,-0.008701730392548653,0.0,79130.37901813249
+1,47,"implies(equals(_1, height_D2), logical_neg(equals(width_D1, _1 + _1)))",2.0,0.0,0,0.0,-0.13662604356564328,0.0,80468.84995752857
+1,48,"logical_neg(implies(logical_neg((width_D1 - width_D1) * (height_D1 * rank_D1)), equals(height_D2, height_D1 + nullity_D2)))",2.0,0.0,0,0.0,-0.05906075570943456,0.0,81794.39372899655
+1,49,"implies(logical_neg(equals(width_D2 * (height_D2 - height_D2), nullity_D2)), logical_neg(equals(height_D2 + _1, _1)))",2.0,0.0,0,0.0,-0.059413239769648976,0.0,83106.68733224075
+2,0,"equals((nullity_D2 * _0) + (nullity_D2 + rank_D2), width_D2)",1.0,0.0,0,0.0,2.25,0.0,1871.5724761549006
+2,1,"equals(nullity_D2 * height_D1, height_D1)",1.0,0.0,0,0.0,-0.0024750000000000024,0.0,3726.0989580979367
+2,2,"equals(_0 + nullity_D1, nullity_D1 - (nullity_D1 + (_0 - nullity_D1)))",1.0,0.0,0,0.0,-0.004875997500000007,0.0,5608.940516519879
+2,3,"implies(logical_neg(equals(width_D1 * height_D2, _1 - nullity_D1)), logical_neg(equals(width_D1 * height_D2, _1 - nullity_D1)))",1.0,0.3,0,0.0,-0.0072047126497499945,0.0,7397.46557865397
+2,4,"equals(height_D1 - rank_D2, rank_D1 + ((nullity_D2 + height_D1) - (rank_D2 + height_D1)))",1.0,0.0,0,0.0,-0.009462828893019987,0.0,9179.757401779438
+2,5,"logical_neg(implies(logical_neg(equals(rank_D2, (_0 + nullity_D1) + nullity_D1)), equals(rank_D2, (_0 + nullity_D1) + nullity_D1)))",1.0,0.3,0,0.0,-0.011651993722798897,0.0,10950.871744326754
+2,6,"equals(height_D2, rank_D1 + (((_0 * _0) * ((rank_D2 + rank_D1) * width_D1)) + nullity_D1))",1.0,0.0,0,0.0,-0.01377381942121768,0.0,12737.809874511353
+2,7,"equals((height_D2 + _0) + ((height_D1 + (rank_D1 * _0)) * (rank_D2 * _0)), width_D1)",1.0,0.0,0,0.0,0.0565656006129119,0.0,14663.335230641824
+2,8,"equals(nullity_D2 + (nullity_D2 * (((height_D2 + height_D1) + nullity_D2) * _0)), nullity_D2 * nullity_D2)",1.0,0.0,0,0.0,-0.023762307777681513,0.0,16564.159580228137
+2,9,"equals(height_D2 + ((((width_D2 * _0) + nullity_D2) + (width_D2 * width_D1)) * _0), width_D1)",1.0,0.0,0,0.0,-0.026334495344517782,0.0,18462.47048481113
+2,10,"equals((((_0 * (width_D1 * nullity_D1)) * nullity_D1) + _0) + (rank_D1 + _1), height_D1)",1.0,0.0,0,0.0,-0.02882504580385791,0.0,20339.01694927242
+2,11,"logical_neg(implies(logical_neg(equals(width_D1, (width_D2 - _1) * rank_D2)), equals(width_D1, (width_D2 - _1) * rank_D2)))",1.0,0.3,0,0.0,-0.031235888239890156,0.0,22186.190128469545
+2,12,"implies(logical_neg(equals(width_D2, (width_D2 + rank_D2) + nullity_D2)), logical_neg(equals(width_D2, (width_D2 + rank_D2) + nullity_D2)))",1.0,0.3,0,0.0,-0.03356891030297012,0.0,24022.949047786118
+2,13,"equals(nullity_D1 + height_D1, _0 + ((_0 + _1) + height_D2))",1.0,0.0,0,0.0,-0.035825959064604264,0.0,25827.56002676668
+2,14,"equals(_1 + ((_0 * (height_D1 + width_D1)) * ((height_D1 * rank_D2) + height_D2)), nullity_D2)",1.0,0.0,0,0.0,-0.038008841855115216,0.0,27630.294730174774
+2,15,"logical_neg(implies(logical_neg(equals(_0, (width_D1 - width_D2) + rank_D1)), equals(_0, (width_D1 - width_D2) + rank_D1)))",1.0,0.3,0,0.0,-0.04011932708433607,0.0,29417.32616387576
+2,16,"equals(_0 + (((_0 - _0) - _0) + (width_D1 + (height_D2 - width_D1))), height_D2)",1.0,0.0,0,0.0,-0.04215914504567404,0.0,31166.023489233146
+2,17,"equals(width_D2 + width_D2, ((rank_D2 + _0) + _0) + (width_D2 + nullity_D2))",1.0,0.0,0,0.0,-0.04412998870387822,0.0,32925.304005429265
+2,18,"logical_neg(implies(logical_neg(equals(nullity_D1, rank_D2 - (height_D2 * rank_D2))), equals(nullity_D1, rank_D2 - (height_D2 * rank_D2))))",1.0,0.3,0,0.0,-0.04603351446683797,0.0,34652.16104248707
+2,19,"implies(logical_neg(equals(width_D2, _1 + (nullity_D2 + _1))), logical_neg(equals(width_D2, _1 + (nullity_D2 + _1))))",1.0,0.3,0,0.0,-0.047871342941733175,0.0,36351.84614736883
+2,20,"equals(((nullity_D2 + _0) + _0) + _1, _1 + (_0 + _1))",1.0,0.0,0,0.0,-0.04964505967585014,0.0,38031.61251089975
+2,21,"equals((height_D1 * (_0 * (((rank_D1 + height_D1) + rank_D2) * height_D1))) + width_D1, nullity_D1 + rank_D1)",1.0,0.0,0,0.0,-0.051356215882371575,0.0,39714.54486049786
+2,22,"implies(logical_neg(equals((_1 - ((height_D1 + nullity_D1) + (nullity_D2 - _1))) * _1, nullity_D2)), logical_neg(equals((_1 - ((height_D1 + nullity_D1) + (nullity_D2 - _1))) * _1, nullity_D2)))",1.0,0.3,0,0.0,-0.05300632915144256,0.0,41385.408112794066
+2,23,"implies(logical_neg(equals(nullity_D2, height_D1 + (_1 + rank_D2))), logical_neg(equals(nullity_D2, height_D1 + (_1 + rank_D2))))",1.0,0.3,0,0.0,-0.05459688414680768,0.0,43032.04993695518
+2,24,"logical_neg(implies(logical_neg(equals(nullity_D2 - rank_D1, width_D2 * rank_D2)), equals(nullity_D2 - rank_D1, width_D2 * rank_D2)))",1.0,0.3,0,0.0,-0.056129333288310296,0.0,44674.31152505432
+2,25,"implies(logical_neg(equals((nullity_D2 + height_D1) + _0, rank_D1)), logical_neg(equals((nullity_D2 + height_D1) + _0, rank_D1)))",1.0,0.3,0,0.0,-0.05760509742053672,0.0,46302.48579773619
+2,26,"equals(rank_D1 + (((_0 + nullity_D1) + _1) + rank_D1), height_D1 + width_D1)",1.0,0.0,0,0.0,-0.05902556646788523,0.0,47902.48250852879
+2,27,"equals((_1 + (_0 + ((_0 + _0) + _0))) + rank_D1, height_D1)",1.0,0.0,0,0.0,-0.06039210007633134,0.0,49491.19917353229
+2,28,"implies(equals(height_D2 - (nullity_D2 + rank_D1), height_D2 - rank_D1), logical_neg(equals(height_D2 - (nullity_D2 + rank_D1), height_D2 - rank_D1)))",1.0,0.3,0,0.0,-0.06170602824215778,0.0,51061.90899829906
+2,29,"logical_neg(implies(equals(_1, (((nullity_D1 * (rank_D1 + (width_D2 - (height_D1 + height_D1)))) * height_D2) + width_D1) - width_D1), logical_neg(equals(_0 - nullity_D2, width_D2 * height_D1))))",2.0,0.0,0,0.0,-0.15601300835255477,0.0,52606.13238829777
+2,30,"implies(equals((_1 - _1) + rank_D1, height_D2), logical_neg(equals((_1 - _1) + rank_D1, height_D2)))",1.0,0.3,0,0.0,0.05910215189887368,0.0,54138.80668134263
+2,31,"logical_neg(implies(equals(width_D2, width_D2 - (width_D1 + _0)), (nullity_D2 - nullity_D2) + nullity_D2))",2.0,0.0,0,0.0,-0.15472308568360163,0.0,55663.048644814706
+2,32,"implies(equals(rank_D2, _1 - (rank_D1 - nullity_D2)), logical_neg(equals(rank_D2, _1 - (rank_D1 - nullity_D2))))",1.0,0.3,0,0.0,0.05436877318221175,0.0,57152.96798789095
+2,33,"implies(logical_neg(equals(_1 - height_D2, _0 * width_D2)), equals(_1 - height_D2, _0 * width_D2))",1.0,0.3,0,0.0,-0.0675311383914905,0.0,58623.36010750874
+2,34,"implies(equals(_0, (_0 + rank_D1) + rank_D2), logical_neg(equals(_0, (_0 + rank_D1) + rank_D2)))",1.0,0.3,0,0.0,-0.06855577949507416,0.0,60097.80933011177
+2,35,"equals(width_D1, rank_D1 + nullity_D1)",1.0,0.0,0,0.0,-0.06953634513312076,0.0,61576.50554486428
+2,36,"equals(width_D1, rank_D1 + nullity_D1)",1.0,0.0,0,0.0,-0.07047394925847023,0.0,63005.292796425296
+2,37,"implies(equals(rank_D2, (nullity_D2 - _1) * _1), logical_neg(equals(nullity_D2 + height_D2, height_D1 + height_D1)))",2.0,0.0,0,0.0,-0.15059302162207475,0.0,64425.79964471086
+2,38,"logical_neg(implies(equals(nullity_D1, (rank_D2 * _0) - _0), equals(nullity_D1, (rank_D2 * _0) - _0)))",1.0,0.3,0,0.0,0.04153449255486663,0.0,65864.78487108507
+2,39,"logical_neg(implies(equals(nullity_D1 - (width_D1 * nullity_D2), height_D2), equals(nullity_D1 - (width_D1 * nullity_D2), height_D2)))",1.0,0.3,0,0.0,-0.07303976710545619,0.0,67242.75799426051
+2,40,"implies(equals(_0, width_D1 + (rank_D1 + nullity_D1)), logical_neg(equals(_0, width_D1 + (rank_D1 + nullity_D1))))",1.0,0.3,0,0.0,-0.07381618160195655,0.0,68626.92245544991
+2,41,"implies(equals(rank_D1 + height_D1, nullity_D1), logical_neg(equals(height_D2, nullity_D1 + (nullity_D1 + height_D1))))",2.0,0.0,0,0.0,-0.14765776335967604,0.0,69993.50917869853
+2,42,"implies(equals(height_D2 + height_D2, height_D2), logical_neg(equals(height_D2 + height_D2, height_D2)))",1.0,0.3,0,0.0,0.03401980107894057,0.0,71358.15621266517
+2,43,"logical_neg(implies(equals(nullity_D1 + (width_D2 - rank_D1), _1), logical_neg(equals(nullity_D1 + (width_D2 - rank_D1), _1))))",1.0,0.3,0,0.0,-0.07592280207121138,0.0,72698.5970722747
+2,44,"logical_neg(implies(logical_neg(equals(height_D2, nullity_D1)), equals(height_D2, nullity_D1)))",1.0,0.3,0,0.0,-0.07655397698361,0.0,74021.57459605254
+2,45,"implies(equals(width_D2, height_D2), logical_neg(equals(width_D2, height_D2)))",1.0,0.3,0,0.0,-0.07715117112851573,0.0,75345.41754086842
+2,46,"implies(equals(height_D2, (height_D2 * _0) - width_D2), logical_neg(equals(height_D2, (height_D2 * _0) - width_D2)))",1.0,0.3,0,0.0,-0.07771527492706905,0.0,76657.69373765113
+2,47,"logical_neg(implies(logical_neg(equals(height_D1, (rank_D1 * height_D2) + nullity_D2)), nullity_D2 + (nullity_D2 - _1)))",2.0,0.0,0,0.0,-0.14304447861802885,0.0,77953.87184166562
+2,48,"logical_neg(implies(equals(rank_D2, nullity_D2), logical_neg(equals(rank_D2, nullity_D2))))",1.0,0.3,0,0.0,0.024134015877801913,0.0,79217.96180108043
+2,49,"implies(logical_neg((height_D1 - rank_D1) + _0), logical_neg((height_D1 - rank_D1) + _0))",1.0,0.3,0,0.0,-0.07921765302619863,0.0,80483.93204289397
+3,0,"equals(_1, (nullity_D2 - (width_D1 - width_D1)) * nullity_D2)",1.0,0.0,0,0.0,4.5,0.0,1371.984069734771
+3,1,"equals(_1, height_D1 - (height_D1 - nullity_D2))",1.0,0.0,0,0.0,0.0,0.0,2741.303640649776
+3,2,"equals(width_D2, rank_D2 + (nullity_D1 + ((width_D2 - nullity_D1) - rank_D2)))",1.0,0.0,0,0.0,0.0,0.0,4089.818025883146
+3,3,"equals(height_D2 + (width_D1 * (nullity_D2 + (_1 * _0))), width_D1 + width_D1)",1.0,0.0,0,0.0,0.0,0.0,5415.438903148963
+3,4,"equals(height_D2, width_D1 + (_0 * (width_D1 + (rank_D1 * (height_D1 * (width_D2 + nullity_D2))))))",1.0,0.0,0,0.0,0.23068617360698,0.0,7192.642892201115
+3,5,"equals(width_D2, rank_D2 + (_0 + (_0 + (_0 + nullity_D2))))",1.0,0.0,0,0.0,-0.011651993722798897,0.0,8989.899247703212
+3,6,"equals(height_D2 - (_0 - _0), width_D1)",1.0,0.0,0,0.0,-0.01377381942121768,0.0,10752.100222774401
+3,7,"equals(width_D2 + (_1 + _0), _0 + (width_D2 + nullity_D2))",1.0,0.0,0,0.0,-0.01582988378450294,0.0,12489.214997414563
+3,8,"equals(height_D1, rank_D1 + ((_0 + (_0 + nullity_D2)) + _0))",1.0,0.0,0,0.0,-0.017821730833261124,0.0,14224.769373854844
+3,9,"equals(nullity_D1 + (_0 + (rank_D1 + height_D2)), height_D2 + height_D2)",1.0,0.0,0,0.0,-0.019750871508388335,0.0,15915.562065443053
+3,10,"logical_neg(implies(logical_neg(equals(width_D2 + width_D1, height_D2 + _1)), equals(width_D2 + width_D1, height_D2 + _1)))",1.0,0.3,0,0.0,-0.02161878435289342,0.0,17618.772934863657
+3,11,"equals((width_D1 - rank_D1) + ((rank_D2 - width_D1) + ((nullity_D2 + width_D1) - width_D2)), nullity_D1)",1.0,0.0,0,0.0,-0.02342691617991763,0.0,19302.212274652924
+3,12,"equals(((((_0 + nullity_D2) + _0) * _1) * height_D1) + (_0 * nullity_D2), height_D1)",1.0,0.0,0,0.0,-0.02517668272722759,0.0,20939.091521621052
+3,13,"equals((nullity_D2 * (height_D2 + _0)) * (_1 + ((_0 + _0) * nullity_D2)), width_D1)",1.0,0.0,0,0.0,-0.0268694692984532,0.0,22596.706763254406
+3,14,"equals((_0 * rank_D2) + (((rank_D1 + (_1 * rank_D2)) * _0) + _1), nullity_D2)",1.0,0.0,0,0.0,-0.028506631391336416,0.0,24225.378602810204
+3,15,"equals(width_D2, (rank_D2 + nullity_D2) + ((rank_D2 * width_D1) * _0))",1.0,0.0,0,0.0,-0.030089495313252043,0.0,25824.16764121938
+3,16,"equals(height_D2, (width_D1 + _0) * nullity_D2)",1.0,0.0,0,0.0,-0.03161935878425552,0.0,27432.70851116291
+3,17,"implies(logical_neg(equals(height_D1 - (_0 * width_D1), _0)), logical_neg(equals(height_D1 - (_0 * width_D1), _0)))",1.0,0.3,0,0.0,-0.033097491527908654,0.0,28989.64847286861
+3,18,"equals(height_D2, (rank_D1 + rank_D2) * nullity_D2)",0.0,0.0,0,0.0,0.13957816866226488,35.04957798090368,30521.089020713694
+3,19,"implies(logical_neg(equals(_1, (height_D1 + _0) * _0)), logical_neg(equals(_1, (height_D1 + _0) * _0)))",1.0,0.3,0,0.0,-0.24244566316519653,0.0,32050.870876057812
+3,20,"logical_neg(implies(logical_neg(equals(width_D1 * (nullity_D2 + nullity_D2), _1)), equals(width_D1 * (nullity_D2 + nullity_D2), _1)))",1.0,0.3,0,0.0,-0.03723379475688761,0.0,33562.37950828186
+3,21,"equals(rank_D1 + (_1 - rank_D1), _1)",1.0,0.0,0,0.0,-0.038517161911778695,0.0,35092.92963542772
+3,22,"implies(logical_neg(equals(rank_D1, height_D2 - (rank_D1 + (rank_D2 * (width_D1 - nullity_D1))))), logical_neg(equals(rank_D1, height_D2 - (rank_D1 + (rank_D2 * (width_D1 - nullity_D1))))))",1.0,0.3,0,0.0,-0.03975474686358191,0.0,36595.208847621005
+3,23,"equals((width_D1 + nullity_D1) - nullity_D1, width_D1)",1.0,0.0,0,0.0,-0.040947663110105774,0.0,38048.51801123087
+3,24,"logical_neg(implies(logical_neg(equals(height_D2 - (_1 + height_D2), nullity_D2)), equals(height_D2 - (_1 + height_D2), nullity_D2)))",1.0,0.3,0,0.0,-0.04209699996623272,0.0,39537.010089735246
+3,25,"implies(logical_neg(equals(nullity_D2, (height_D1 + height_D1) + nullity_D1)), logical_neg(equals(nullity_D2, (height_D1 + height_D1) + nullity_D1)))",1.0,0.3,0,0.0,-0.04320382306540255,0.0,40980.7380177749
+3,26,"implies(logical_neg(equals(width_D2 + rank_D1, width_D1 - nullity_D1)), logical_neg(equals(width_D2 + rank_D1, width_D1 - nullity_D1)))",1.0,0.3,0,0.0,-0.04426917485091394,0.0,42416.046009371814
+3,27,"logical_neg(implies(logical_neg(equals(rank_D2, rank_D2 + (width_D1 - height_D1))), equals(rank_D2, rank_D2 + (width_D1 - height_D1))))",1.0,0.3,0,0.0,-0.04529407505724851,0.0,43844.99627382023
+3,28,"implies(equals(width_D2, (height_D1 - nullity_D1) * height_D1), logical_neg(equals(width_D2, (height_D1 - nullity_D1) * height_D1)))",1.0,0.3,0,0.0,-0.046279521181618336,0.0,45280.95269802091
+3,29,"equals((width_D2 * nullity_D2) - nullity_D2, rank_D2)",1.0,0.0,0,0.0,-0.047226488945933134,0.0,46701.77315027029
+3,30,"logical_neg(implies(logical_neg(equals(width_D1, (nullity_D2 * rank_D2) - height_D2)), equals(width_D1, (nullity_D2 * rank_D2) - height_D2)))",1.0,0.3,0,0.0,-0.04813593274937976,0.0,48057.2454729154
+3,31,"implies(logical_neg(equals((rank_D2 + rank_D2) + rank_D2, width_D2)), equals((rank_D2 + rank_D2) + rank_D2, width_D2))",1.0,0.3,0,0.0,-0.04900878611180309,0.0,49436.09860328218
+3,32,"implies(equals(nullity_D2, nullity_D2 + (height_D2 - height_D1)), logical_neg(equals(nullity_D2, nullity_D2 + (height_D2 - height_D1))))",1.0,0.3,0,0.0,-0.04984596210807286,0.0,50777.245128217866
+3,33,"logical_neg(implies(equals(width_D1 * (nullity_D2 * rank_D2), _0), equals(width_D1 * (nullity_D2 * rank_D2), _0)))",1.0,0.3,0,0.0,-0.05064835379361789,0.0,52122.313874239866
+3,34,"logical_neg(implies(equals(_0 - rank_D1, height_D1 - nullity_D1), equals(_0 - rank_D1, height_D1 - nullity_D1)))",1.0,0.3,0,0.0,-0.05141683462130563,0.0,53424.46411563857
+3,35,"implies(logical_neg((rank_D1 - (_0 * height_D2)) - (rank_D1 + height_D1)), (rank_D1 - (_0 * height_D2)) - (rank_D1 + height_D1))",1.0,0.3,0,0.0,-0.05215225884984057,0.0,54745.74528786404
+3,36,"logical_neg(implies(height_D2 - (((rank_D1 - height_D2) + nullity_D1) - rank_D2), height_D2 - (((rank_D1 - height_D2) + nullity_D1) - rank_D2)))",1.0,0.3,0,0.0,-0.052855461943852676,0.0,56030.54891426743
+3,37,"logical_neg(implies((width_D2 - nullity_D1) + width_D2, (width_D2 - nullity_D1) + width_D2))",1.0,0.3,0,0.0,-0.053527260965842705,0.0,57301.51198180877
+3,38,"logical_neg(implies(nullity_D1 - (_1 + nullity_D1), nullity_D1 - (_1 + nullity_D1)))",1.0,0.3,0,0.0,-0.0541684549601484,0.0,58567.43058526252
+3,39,"implies(equals((rank_D2 * nullity_D2) - rank_D2, height_D2), logical_neg(equals((rank_D2 * nullity_D2) - rank_D2, height_D2)))",1.0,0.3,0,0.0,-0.054779825329092154,0.0,59813.17354545635
+3,40,"logical_neg(implies(equals(nullity_D2 + rank_D1, _0 + height_D2), equals(nullity_D2 + rank_D1, _0 + height_D2)))",1.0,0.3,0,0.0,-0.05536213620146742,0.0,61062.6531253721
+3,41,"implies(equals(rank_D2, _1 + _1), logical_neg(equals(rank_D2, _1 + _1)))",1.0,0.3,0,0.0,-0.05591613479351818,0.0,62275.97833525824
+3,42,"equals(height_D2, (_0 + _0) + (_0 + (rank_D1 + (nullity_D1 + _0))))",1.0,0.0,0,0.0,-0.05644255176256253,0.0,63475.35442076111
+3,43,"implies(logical_neg(equals(width_D1 * nullity_D2, width_D2 - nullity_D1)), logical_neg(equals(width_D1 * nullity_D2, width_D2 - nullity_D1)))",1.0,0.3,0,0.0,-0.056942101553408536,0.0,64690.935311115216
+3,44,"logical_neg(implies(equals(rank_D2 - (_1 * width_D2), rank_D2), logical_neg(equals(rank_D2 - (_1 * width_D2), rank_D2))))",1.0,0.3,0,0.0,-0.0574154827377075,0.0,65865.59145453446
+3,45,"logical_neg(implies(equals(_1, (_0 - _0) * width_D1), equals(_1, (_0 - _0) * width_D1)))",1.0,0.3,0,0.0,-0.0578633783463868,0.0,67035.35107433185
+3,46,"logical_neg(implies(logical_neg(equals(nullity_D2, height_D2 * (height_D1 + rank_D2))), equals(width_D1, width_D2 + rank_D2)))",2.0,0.0,0,0.0,-0.15745590780080806,0.0,68211.99158482217
+3,47,"implies(equals(rank_D1 + nullity_D1, _1), logical_neg(equals(rank_D1 + nullity_D1, _1)))",1.0,0.3,0,0.0,0.09719597951855671,0.0,69375.09280273793
+3,48,"implies(logical_neg(equals(nullity_D1 + nullity_D1, height_D1 * rank_D2)), logical_neg(equals(nullity_D1 + nullity_D1, height_D1 * rank_D2)))",1.0,0.3,0,0.0,-0.05906075570943456,0.0,70516.65600754065
+3,49,"logical_neg(implies(equals(nullity_D2 + height_D1, _0), equals(nullity_D2 + height_D1, _0)))",1.0,0.3,0,0.0,-0.028291216398459888,0.0,71770.26339127423
+4,0,"equals(width_D1 + ((_1 - nullity_D1) - height_D1), _0)",1.0,0.0,0,0.0,1.5,0.0,2102.2211490039954
+4,1,"equals(_0 + (_1 * _1), (_1 * _0) + nullity_D2)",1.0,0.0,0,0.0,-0.0033000000000000212,0.0,4147.693814214528
+4,2,"equals(width_D1 + ((width_D2 * _0) * (_0 * (_0 + _0))), height_D2)",1.0,0.0,0,0.0,-0.006501329999999991,0.0,6160.246155038706
+4,3,"logical_neg(implies(logical_neg(equals(_0 * _1, rank_D2)), equals(_0 * _1, rank_D2)))",1.0,0.3,0,0.0,-0.00960628353300001,0.0,8176.250169535462
+4,4,"logical_neg(implies(logical_neg(equals(nullity_D2 + _1, height_D1)), equals(nullity_D2 + _1, height_D1)))",1.0,0.3,0,0.0,-0.012617105190693317,0.0,10157.081946889577
+4,5,"implies(logical_neg(equals(rank_D1 + _1, _0 - nullity_D2)), logical_neg(equals(rank_D1 + _1, _0 - nullity_D2)))",1.0,0.3,0,0.0,-0.015535991630398512,0.0,12113.107165773525
+4,6,"equals(_0, nullity_D1 - (width_D1 - rank_D1))",1.0,0.0,0,0.0,-0.018365092561623556,0.0,14057.574424396296
+4,7,"equals((rank_D1 - (rank_D1 + rank_D2)) - (_1 - (_1 + (rank_D2 + nullity_D2))), _1)",1.0,0.0,0,0.0,-0.02110651171267057,0.0,15949.759359272099
+4,8,"implies(logical_neg(equals(nullity_D2 - (rank_D2 * height_D1), nullity_D1)), logical_neg(equals(nullity_D2 - (rank_D2 * height_D1), nullity_D1)))",1.0,0.3,0,0.0,-0.023762307777681513,0.0,17870.072279089327
+4,9,"logical_neg(implies(logical_neg(equals(_0, _1 + (rank_D1 * nullity_D2))), equals(_0, _1 + (rank_D1 * nullity_D2))))",1.0,0.3,0,0.0,-0.026334495344517782,0.0,19743.542850870406
+4,10,"equals((((_0 - (rank_D1 + (rank_D2 - rank_D2))) - _0) + width_D2) + rank_D1, width_D2)",1.0,0.0,0,0.0,-0.02882504580385791,0.0,21598.357484788314
+4,11,"equals(((rank_D2 + height_D1) * rank_D1) + rank_D2, ((_1 * rank_D2) + rank_D1) * height_D1)",1.0,0.0,0,0.0,-0.031235888239890156,0.0,23450.611890718166
+4,12,"logical_neg(implies(logical_neg(equals(nullity_D1, (rank_D2 * _1) - width_D2)), equals(nullity_D1, (rank_D2 * _1) - width_D2)))",1.0,0.3,0,0.0,-0.03356891030297012,0.0,25279.046988640544
+4,13,"equals(width_D1, (rank_D1 + nullity_D1) + ((_0 + _0) + _0))",1.0,0.0,0,0.0,-0.035825959064604264,0.0,27091.962371462505
+4,14,"equals(width_D2, width_D2 + (nullity_D1 - ((rank_D2 + (nullity_D2 - width_D2)) + (nullity_D1 - _0))))",1.0,0.0,0,0.0,-0.038008841855115216,0.0,28868.12753809845
+4,15,"equals(width_D1, ((_0 + ((_0 + _0) + _0)) + _0) + height_D2)",1.0,0.0,0,0.0,-0.04011932708433607,0.0,30647.166261099705
+4,16,"logical_neg(implies(logical_neg(equals((rank_D1 - nullity_D2) * _1, height_D1)), equals((rank_D1 - nullity_D2) * _1, height_D1)))",1.0,0.3,0,0.0,-0.04215914504567404,0.0,32403.34661959885
+4,17,"implies(logical_neg(equals(nullity_D2 - width_D2, width_D1 * rank_D2)), logical_neg(equals(nullity_D2 - width_D2, width_D1 * rank_D2)))",1.0,0.3,0,0.0,-0.04412998870387822,0.0,34144.59758336575
+4,18,"implies(logical_neg(equals(width_D2, (nullity_D1 * height_D2) - rank_D1)), logical_neg(equals(width_D2, (nullity_D1 * height_D2) - rank_D1)))",1.0,0.3,0,0.0,-0.04603351446683797,0.0,35868.58699484151
+4,19,"implies(logical_neg(equals(height_D1, (_1 * nullity_D1) + _0)), logical_neg(equals(height_D1, (_1 * nullity_D1) + _0)))",1.0,0.3,0,0.0,-0.047871342941733175,0.0,37565.144343870255
+4,20,"implies(logical_neg(equals((_0 + width_D2) * width_D2, _0)), logical_neg(equals((_0 + width_D2) * width_D2, _0)))",1.0,0.3,0,0.0,-0.04964505967585014,0.0,39247.743177311575
+4,21,"implies(logical_neg(equals(nullity_D2, (rank_D1 + _0) * height_D2)), logical_neg(equals(nullity_D2, (rank_D1 + _0) * height_D2)))",1.0,0.3,0,0.0,-0.051356215882371575,0.0,40920.7751079229
+4,22,"implies(logical_neg(equals(height_D2 + height_D2, height_D1)), logical_neg(equals(height_D2 + height_D2, height_D1)))",1.0,0.3,0,0.0,-0.05300632915144256,0.0,42569.86174283277
+4,23,"equals(_0 + ((rank_D2 + _0) + nullity_D2), _1 + (_0 + rank_D2))",1.0,0.0,0,0.0,-0.05459688414680768,0.0,44197.64322693346
+4,24,"logical_neg(implies(logical_neg(equals(rank_D2 * (rank_D2 - width_D1), rank_D2)), equals(rank_D2 * (rank_D2 - width_D1), rank_D2)))",1.0,0.3,0,0.0,-0.056129333288310296,0.0,45825.421999654296
+4,25,"implies(logical_neg(equals(height_D2, _1 + (rank_D1 - _0))), logical_neg(equals(height_D2, _1 + (rank_D1 - _0))))",1.0,0.3,0,0.0,-0.05760509742053672,0.0,47427.2811391727
+4,26,"logical_neg(implies(logical_neg(equals(_1 - rank_D2, nullity_D2 + height_D1)), equals(_1 - rank_D2, nullity_D2 + height_D1)))",1.0,0.3,0,0.0,-0.05902556646788523,0.0,49010.922125445715
+4,27,"implies(logical_neg(equals(_1, width_D2 - (_0 + _1))), logical_neg(equals(height_D1 - rank_D1, nullity_D1 * width_D1)))",2.0,0.0,0,0.0,-0.15725316909601625,0.0,50586.07267333555
+4,28,"logical_neg(implies(equals(_0 + (height_D2 - rank_D1), nullity_D2), logical_neg(equals(_1 - width_D1, nullity_D1 - rank_D2))))",2.0,0.0,0,0.0,-0.03085301412107889,0.0,52136.73402369745
+4,29,"logical_neg(implies(equals(rank_D1, width_D1 + ((rank_D1 - rank_D1) * rank_D2)), logical_neg(equals((height_D2 - rank_D1) * width_D2, height_D2))))",2.0,0.0,0,0.0,-0.03148432596395542,0.0,53687.123518048684
+4,30,"implies(equals(rank_D2 * rank_D1, height_D1 * (nullity_D1 - ((rank_D2 + _1) * (width_D2 - _0)))), logical_neg(equals(rank_D2 * rank_D1, height_D1 * (nullity_D1 - ((rank_D2 + _1) * (width_D2 - _0))))))",1.0,0.3,0,0.0,0.05910215189887368,0.0,55226.39345565032
+4,31,"implies(equals(rank_D2 + (_0 - width_D1), height_D2), logical_neg(equals(rank_D2 + (_0 - width_D1), height_D2)))",1.0,0.3,0,0.0,-0.06534504814907077,0.0,56739.12041272558
+4,32,"logical_neg(implies(rank_D2 + (_0 - rank_D2), rank_D2 + (_0 - rank_D2)))",1.0,0.3,0,0.0,-0.06646128281076381,0.0,58226.25347530736
+4,33,"implies(equals((nullity_D2 * width_D1) - _1, rank_D2), logical_neg(equals((nullity_D2 * width_D1) - _1, rank_D2)))",1.0,0.3,0,0.0,-0.0675311383914905,0.0,59707.04026589679
+4,34,"logical_neg(implies(equals(height_D2, nullity_D2 * (height_D2 + nullity_D2)), equals(height_D2, nullity_D2 * (height_D2 + nullity_D2))))",1.0,0.3,0,0.0,-0.06855577949507416,0.0,61196.489864445626
+4,35,"equals(width_D1, nullity_D1 + rank_D1)",1.0,0.0,0,0.0,-0.06953634513312076,0.0,62652.234511840805
+4,36,"logical_neg(implies(equals(height_D1, rank_D1 + width_D2), equals(height_D1, rank_D1 + width_D2)))",1.0,0.3,0,0.0,-0.07047394925847023,0.0,64093.4694276978
+4,37,"logical_neg(implies(equals(height_D1 * height_D1, _1 - _1), logical_neg(equals(height_D1 * height_D1, _1 - _1))))",1.0,0.3,0,0.0,-0.07136968128779025,0.0,65513.65730581146
+4,38,"logical_neg(implies(logical_neg(equals(_1, _0 - _0)), equals(_1, _0 - _0)))",1.0,0.3,0,0.0,-0.0722246066135312,0.0,66931.79904745158
+4,39,"implies(logical_neg(equals(nullity_D1, width_D2 - (_0 * width_D1))), logical_neg(equals(nullity_D1 + rank_D2, height_D1)))",2.0,0.0,0,0.0,-0.14914139172944194,0.0,68325.73829057624
+4,40,"implies(logical_neg(equals(rank_D1, height_D2 + width_D2)), logical_neg(equals((height_D1 + width_D1) + rank_D2, rank_D1)))",2.0,0.0,0,0.0,-0.036908090800978274,0.0,69711.70498051509
+4,41,"logical_neg(implies(logical_neg(equals(_1, rank_D1 + _1)), equals((width_D2 + height_D2) - rank_D2, rank_D2)))",2.0,0.0,0,0.0,-0.03727742319567878,0.0,71085.98398125744
+4,42,"implies(logical_neg(equals(rank_D2, width_D2 + height_D2)), equals(rank_D2, width_D2 + height_D2))",1.0,0.3,0,0.0,0.03401980107894057,0.0,72442.52416679206
+4,43,"logical_neg(implies(logical_neg(equals(width_D1 + height_D2, height_D2 * nullity_D1)), equals(rank_D1 + nullity_D2, rank_D1 - height_D2)))",2.0,0.0,0,0.0,-0.1461451724303394,0.0,73777.94429568408
+4,44,"logical_neg(implies(logical_neg((_1 + width_D1) - nullity_D1), equals((width_D1 - rank_D1) * nullity_D1, height_D2)))",2.0,0.0,0,0.0,-0.038276988491805,0.0,75115.59914080442
+4,45,"logical_neg(implies(width_D2 - nullity_D1, width_D2 - nullity_D1))",1.0,0.3,0,0.0,0.028879743215462755,0.0,76433.9203271656
+4,46,"logical_neg(implies(equals(nullity_D2, (width_D1 * rank_D1) + width_D2), logical_neg(((rank_D1 + height_D1) - nullity_D1) * nullity_D2)))",2.0,0.0,0,0.0,-0.14382824266407324,0.0,77738.91731784894
+4,47,"implies(equals(rank_D1 - _1, width_D2), logical_neg(equals(rank_D1 - _1, width_D2)))",1.0,0.3,0,0.0,0.02567374020954229,0.0,79027.28768185366
+4,48,"logical_neg(implies(_0 * ((height_D2 - height_D1) - rank_D2), logical_neg(equals(height_D2 - rank_D2, width_D1 * height_D1))))",2.0,0.0,0,0.0,-0.142255527296671,0.0,80287.45568579207
+4,49,"implies(equals(rank_D1 + _1, _0 * height_D2), equals(rank_D1 + _1, _0 * height_D2))",1.0,0.3,0,0.0,0.022635220229278868,0.0,81550.06331009846
+5,0,"equals(width_D1, height_D2)",1.0,0.0,0,0.0,1.5,0.0,2083.595872014836
+5,1,"equals(height_D1 + (((nullity_D1 + rank_D2) - height_D2) - nullity_D2), rank_D2)",1.0,0.0,0,0.0,-0.0033000000000000212,0.0,4143.664632321801
+5,2,"logical_neg(implies(logical_neg(equals(height_D1 + _1, _1 + width_D1)), equals(height_D1 + _1, _1 + width_D1)))",1.0,0.3,0,0.0,-0.006501329999999991,0.0,6200.872176620642
+5,3,"equals(_0 + height_D1, nullity_D2 + ((nullity_D2 + _0) - (_1 - rank_D1)))",1.0,0.0,0,0.0,-0.00960628353300001,0.0,8199.851840598521
+5,4,"equals(_0, ((((_0 - nullity_D1) + (rank_D2 - rank_D2)) + _0) + height_D2) - rank_D1)",1.0,0.0,0,0.0,-0.012617105190693317,0.0,10204.434659039309
+5,5,"equals(_1, (_1 - width_D2) + width_D2)",1.0,0.0,0,0.0,-0.015535991630398512,0.0,12203.451588526557
+5,6,"logical_neg(implies(logical_neg(equals(width_D2 + rank_D2, width_D1 + width_D2)), equals((rank_D1 * nullity_D1) - width_D2, rank_D2)))",2.0,0.0,0,0.0,-0.16609590451431178,0.0,14176.924317908693
+5,7,"equals((nullity_D1 + (width_D1 - (nullity_D1 - width_D2))) - rank_D2, _0 + (width_D1 + nullity_D2))",1.0,0.0,0,0.0,0.1342377129384944,0.0,16102.936714890948
+5,8,"equals(((_0 + _0) + _1) + (_0 + _0), nullity_D2)",1.0,0.0,0,0.0,-0.023762307777681513,0.0,18020.287771619765
+5,9,"logical_neg(implies(logical_neg(equals(rank_D1, (nullity_D1 * height_D1) + rank_D1)), equals(rank_D1, (nullity_D1 * height_D1) + rank_D1)))",1.0,0.3,0,0.0,-0.026334495344517782,0.0,19910.124908762973
+5,10,"logical_neg(implies(logical_neg(equals(width_D1, (_0 * rank_D2) - _1)), equals(width_D1, (_0 * rank_D2) - _1)))",1.0,0.3,0,0.0,-0.02882504580385791,0.0,21808.830026306852
+5,11,"implies(logical_neg(equals((rank_D1 * nullity_D2) - width_D1, nullity_D1)), logical_neg(equals((rank_D1 * nullity_D2) - width_D1, nullity_D1)))",1.0,0.3,0,0.0,-0.031235888239890156,0.0,23701.36118334167
+5,12,"implies(logical_neg(equals(height_D1 + width_D2, rank_D2 + nullity_D2)), logical_neg(equals(height_D1 + width_D2, rank_D2 + nullity_D2)))",1.0,0.3,0,0.0,-0.03356891030297012,0.0,25529.999029989678
+5,13,"logical_neg(implies(logical_neg(equals((_0 + height_D1) + _0, nullity_D1)), equals((_0 + height_D1) + _0, nullity_D1)))",1.0,0.3,0,0.0,-0.035825959064604264,0.0,27376.822618306214
+5,14,"equals(_1, (_1 - width_D1) + width_D1)",1.0,0.0,0,0.0,-0.038008841855115216,0.0,29171.735529490325
+5,15,"implies(logical_neg(equals(height_D1 - rank_D2, _1 * height_D2)), logical_neg(equals(height_D1 - rank_D2, _1 * height_D2)))",1.0,0.3,0,0.0,-0.04011932708433607,0.0,30950.85719391254
+5,16,"implies(logical_neg(equals((width_D2 + height_D1) + nullity_D1, _1)), logical_neg(equals((width_D2 + height_D1) + nullity_D1, _1)))",1.0,0.3,0,0.0,-0.04215914504567404,0.0,32696.941624293537
+5,17,"equals(_0, ((width_D1 - width_D1) + ((height_D2 + (_0 - width_D1)) - rank_D1)) + rank_D1)",1.0,0.0,0,0.0,-0.04412998870387822,0.0,34418.05919794923
+5,18,"equals(_1, (_1 + width_D1) - width_D1)",1.0,0.0,0,0.0,-0.04603351446683797,0.0,36144.50011449611
+5,19,"implies(logical_neg(equals((rank_D1 + nullity_D2) + _0, nullity_D2)), logical_neg(equals((rank_D1 + nullity_D2) + _0, nullity_D2)))",1.0,0.3,0,0.0,-0.047871342941733175,0.0,37863.065798098905
+5,20,"equals(width_D2, nullity_D2 + ((width_D2 - nullity_D1) + ((width_D2 - height_D1) + (height_D2 - width_D2))))",1.0,0.0,0,0.0,-0.04964505967585014,0.0,39540.37297051373
+5,21,"implies(logical_neg(equals(_0, nullity_D2 * (rank_D2 - width_D2))), logical_neg(equals(_0, nullity_D2 * (rank_D2 - width_D2))))",1.0,0.3,0,0.0,-0.051356215882371575,0.0,41216.01446522996
+5,22,"logical_neg(implies(logical_neg(equals(_1 - width_D2, nullity_D1 + rank_D2)), equals(_1 - width_D2, nullity_D1 + rank_D2)))",1.0,0.3,0,0.0,-0.05300632915144256,0.0,42869.49540715501
+5,23,"implies(logical_neg(equals(rank_D1 - (rank_D1 + nullity_D2), height_D2 - rank_D2)), logical_neg(equals(_0 + nullity_D1, width_D1 + height_D1)))",2.0,0.0,0,0.0,-0.1595674893473464,0.0,44523.10387620949
+5,24,"implies(logical_neg(equals(((_1 + height_D1) * rank_D1) - nullity_D1, width_D1)), logical_neg(equals(((_1 + height_D1) * rank_D1) - nullity_D1, width_D1)))",1.0,0.3,0,0.0,0.07481702351289282,0.0,46137.22857880774
+5,25,"implies(logical_neg(equals(nullity_D1, width_D2 - (width_D1 * nullity_D2))), logical_neg(equals(nullity_D1, width_D2 - (width_D1 * nullity_D2))))",1.0,0.3,0,0.0,-0.05760509742053672,0.0,47730.13574083656
+5,26,"implies(logical_neg(equals(width_D2, height_D1 - (rank_D2 * rank_D1))), logical_neg(equals(width_D2, height_D1 - (rank_D2 * rank_D1))))",1.0,0.3,0,0.0,-0.05902556646788523,0.0,49325.903056509895
+5,27,"implies(equals(height_D1 * nullity_D1, height_D2 - nullity_D1), logical_neg(equals(height_D1 * nullity_D1, height_D2 - nullity_D1)))",1.0,0.3,0,0.0,-0.06039210007633134,0.0,50907.70244183181
+5,28,"logical_neg(implies(equals(nullity_D2 + rank_D2, _1 - width_D1), equals(nullity_D2 + rank_D2, _1 - width_D1)))",1.0,0.3,0,0.0,-0.06170602824215778,0.0,52455.48654025584
+5,29,"implies(equals((height_D2 + width_D1) + _1, height_D1), logical_neg(equals((height_D2 + width_D1) + _1, height_D1)))",1.0,0.3,0,0.0,-0.06296865192791085,0.0,53992.29786833252
+5,30,"implies(equals(_1 + width_D2, height_D1 - height_D2), logical_neg(equals(_1 + width_D2, height_D1 - height_D2)))",1.0,0.3,0,0.0,-0.06418124366583967,0.0,55504.7280133492
+5,31,"logical_neg(implies(logical_neg(equals((height_D2 - height_D2) * width_D2, _1)), equals(nullity_D2 + width_D2, _0 + _1)))",2.0,0.0,0,0.0,-0.15472308568360163,0.0,57010.6507248756
+5,32,"logical_neg(implies(equals(width_D1, rank_D1 + (_0 + width_D1)), equals(_0, height_D2 - (nullity_D1 * rank_D2))))",2.0,0.0,0,0.0,-0.03323064140538191,0.0,58512.35923229803
+5,33,"logical_neg(implies(equals(_0 * width_D2, height_D1 - height_D2), equals(_0 * width_D2, height_D1 - height_D2)))",1.0,0.3,0,0.0,0.05209061704155531,0.0,59986.53823594966
+5,34,"implies(equals(nullity_D1 + rank_D2, _0 - nullity_D1), logical_neg(equals(nullity_D1 + rank_D2, _0 - nullity_D1)))",1.0,0.3,0,0.0,-0.06855577949507416,0.0,61445.68874920415
+5,35,"implies(equals(height_D1, rank_D2 * rank_D2), logical_neg(equals(height_D1, rank_D2 * rank_D2)))",1.0,0.3,0,0.0,-0.048918067649778796,0.0,62939.26822828327
+5,36,"logical_neg(implies(equals(rank_D1, nullity_D1 + nullity_D1), equals(rank_D1, nullity_D1 + nullity_D1)))",1.0,0.3,0,0.0,-0.07928319291577904,0.0,64415.27747065854
+5,37,"logical_neg(implies(equals(nullity_D2, _0 - nullity_D2), equals(nullity_D2, _0 - nullity_D2)))",1.0,0.3,0,0.0,-0.08029089144876407,0.0,65872.88735514255
+5,38,"logical_neg(implies(equals(width_D2 - rank_D2, height_D2 * rank_D1), equals(width_D2 - rank_D2, height_D2 * rank_D1)))",1.0,0.3,0,0.0,-0.08125268244022259,0.0,67330.16971962844
+5,39,"implies(equals(nullity_D1 + width_D1, rank_D2), logical_neg(equals(height_D1 + width_D1, width_D2 + rank_D2)))",2.0,0.0,0,0.0,-0.13924595646162755,0.0,68766.72788252121
+5,40,"logical_neg(implies(equals(nullity_D2, rank_D2 - nullity_D2), equals(rank_D2, _1 + nullity_D2)))",2.0,0.0,0,0.0,-0.05536213620146742,0.0,70186.99897471211
+5,41,"logical_neg(implies(equals(height_D2 + height_D1, rank_D1), logical_neg(equals(height_D2 + height_D1, rank_D1))))",1.0,0.3,0,0.0,-0.0010889470672793423,0.0,71596.63851406242
+5,42,"implies((width_D1 - nullity_D1) + _0, logical_neg((width_D1 - nullity_D1) + _0))",1.0,0.3,0,0.0,-0.0846638276438438,0.0,72981.05020583
+5,43,"implies(equals(rank_D1, rank_D2), logical_neg(equals(width_D1, (rank_D2 * rank_D1) + width_D2)))",2.0,0.0,0,0.0,-0.13807993009945882,0.0,74353.68328162184
+5,44,"logical_neg(implies(equals(width_D2, _1), equals(nullity_D1 * (_0 - nullity_D1), width_D2)))",2.0,0.0,0,0.0,-0.0574154827377075,0.0,75721.80250915307
+5,45,"implies(logical_neg(equals(_1, (rank_D2 + nullity_D2) * width_D2)), equals(_1, (rank_D2 + nullity_D2) * width_D2))",1.0,0.3,0,0.0,-0.00727188176159634,0.0,77084.00373346022
+5,46,"logical_neg(implies(equals(height_D2, rank_D1), logical_neg(equals(width_D2 + nullity_D1, rank_D1))))",2.0,0.0,0,0.0,-0.1370144100957058,0.0,78415.79672902879
+5,47,"logical_neg(implies(logical_neg(equals(_0, _0 + nullity_D2)), equals(_1 - nullity_D1, _1 - width_D2)))",2.0,0.0,0,0.0,-0.058685369204243276,0.0,79752.6157557147
+5,48,"implies(logical_neg(_0 - (rank_D1 - rank_D2)), equals(width_D2, rank_D1))",2.0,0.0,0,0.0,-0.05906075570943456,0.0,81064.85859217678
+5,49,"logical_neg(implies(equals(nullity_D1, _0), logical_neg(equals(_1 + _1, height_D1))))",2.0,0.0,0,0.0,-0.059413239769648976,0.0,82365.98540302308
+6,0,"equals(height_D1, rank_D1 + (_0 + _1))",1.0,0.0,0,0.0,1.125,0.0,2158.9127761297677
+6,1,"equals((nullity_D2 + _0) + (height_D2 * (rank_D1 * _0)), _1)",1.0,0.0,0,0.0,-0.003712500000000031,0.0,4287.1611043514995
+6,2,"equals(_0 + height_D2, width_D1 - _0)",1.0,0.0,0,0.0,-0.007313996250000038,0.0,6379.455894970388
+6,3,"implies(logical_neg(equals(height_D2 - rank_D1, _0 * rank_D1)), logical_neg(equals(height_D2 - rank_D1, _0 * rank_D1)))",1.0,0.3,0,0.0,-0.010807068974624965,0.0,8468.426724335864
+6,4,"implies(logical_neg(equals(_1 - (height_D1 * height_D2), rank_D1)), logical_neg(equals(_1 - (height_D1 * height_D2), rank_D1)))",1.0,0.3,0,0.0,-0.014194243339529955,0.0,10516.41021925236
+6,5,"implies(logical_neg(equals(nullity_D2, (width_D2 + _1) + nullity_D2)), logical_neg(equals(nullity_D2, (width_D2 + _1) + nullity_D2)))",1.0,0.3,0,0.0,-0.01747799058419832,0.0,12560.901653802533
+6,6,"equals(width_D2, (nullity_D1 - (nullity_D1 + (rank_D1 - rank_D1))) + (rank_D1 + (width_D2 - rank_D1)))",1.0,0.0,0,0.0,-0.020660729131826507,0.0,14596.104526845254
+6,7,"equals(rank_D1, ((width_D1 - (nullity_D1 + _0)) - (_0 + _0)) + (width_D1 - height_D2))",1.0,0.0,0,0.0,-0.023744825676754424,0.0,16607.96664590745
+6,8,"implies(logical_neg(equals((height_D1 + _1) + nullity_D1, rank_D1)), logical_neg(equals((height_D1 + _1) + nullity_D1, rank_D1)))",1.0,0.3,0,0.0,-0.02673259624989171,0.0,18580.23711215738
+6,9,"equals(((nullity_D2 + (nullity_D2 - nullity_D2)) + (width_D1 - width_D1)) + (nullity_D2 - _1), nullity_D2)",1.0,0.0,0,0.0,-0.029626307262582505,0.0,20554.52829139573
+6,10,"implies(logical_neg(equals(nullity_D1 * (_1 - width_D1), nullity_D2)), logical_neg(equals(nullity_D1 * (_1 - width_D1), nullity_D2)))",1.0,0.3,0,0.0,-0.032428176529340144,0.0,22501.005696448396
+6,11,"logical_neg(implies(logical_neg(equals(height_D1, nullity_D2 - (width_D2 * height_D1))), equals(height_D1, nullity_D2 - (width_D2 * height_D1))))",1.0,0.3,0,0.0,-0.035140374269876457,0.0,24423.004528633865
+6,12,"equals(_1, nullity_D2)",1.0,0.0,0,0.0,-0.03776502409084137,0.0,26328.698984019702
+6,13,"equals((((width_D2 + width_D2) + _1) - width_D2) - (rank_D2 + width_D2), _1 - rank_D2)",1.0,0.0,0,0.0,-0.0403042039476798,0.0,28228.17121093502
+6,14,"implies(logical_neg(equals(rank_D1 + _0, nullity_D2 + nullity_D2)), logical_neg(equals(rank_D1 + _0, nullity_D2 + nullity_D2)))",1.0,0.3,0,0.0,-0.0427599470870046,0.0,30101.126647901652
+6,15,"logical_neg(implies(logical_neg(equals(nullity_D1 * nullity_D1, height_D1 - rank_D1)), equals(nullity_D1 * nullity_D1, height_D1 - rank_D1)))",1.0,0.3,0,0.0,-0.04513424296987805,0.0,31960.504921028296
+6,16,"implies(logical_neg(equals(height_D1 - _0, _0 * width_D2)), logical_neg(equals(height_D1 - _0, _0 * width_D2)))",1.0,0.3,0,0.0,-0.04742903817638327,0.0,33788.10927695858
+6,17,"implies(logical_neg(equals(rank_D1 * (height_D1 * rank_D2), height_D1)), logical_neg(equals(rank_D1 * (height_D1 * rank_D2), height_D1)))",1.0,0.3,0,0.0,-0.04964623729186297,0.0,35597.62367953591
+6,18,"implies(logical_neg(equals((width_D2 + _1) + width_D2, width_D2)), logical_neg(equals((width_D2 + _1) + width_D2, width_D2)))",1.0,0.3,0,0.0,-0.05178770377519271,0.0,37396.30779972574
+6,19,"implies(logical_neg(equals(rank_D2, width_D1 + _0)), logical_neg(equals(rank_D2, width_D1 + _0)))",1.0,0.3,0,0.0,-0.053855260809449856,0.0,39174.75142979699
+6,20,"implies(logical_neg(equals(_0, height_D2 + width_D2)), logical_neg(equals(_0, height_D2 + width_D2)))",1.0,0.3,0,0.0,-0.055850692135331406,0.0,40939.97947312838
+6,21,"implies(logical_neg(equals(_1, height_D1 - (rank_D2 * _1))), logical_neg(equals(_1, height_D1 - (rank_D2 * _1))))",1.0,0.3,0,0.0,-0.05777574286766805,0.0,42695.0998680821
+6,22,"logical_neg(implies(logical_neg(equals(width_D2, (_1 + _1) + _0)), equals(width_D2, (_1 + _1) + _0)))",1.0,0.3,0,0.0,-0.05963212029537286,0.0,44423.46438230042
+6,23,"logical_neg(implies(logical_neg(equals((height_D2 - nullity_D1) + _1, (_1 * height_D1) - (nullity_D2 - width_D1))), equals((height_D2 - nullity_D1) + _1, (_1 * height_D1) - (nullity_D2 - width_D1))))",1.0,0.3,0,0.0,-0.061421494665158664,0.0,46141.3109198498
+6,24,"implies(logical_neg(equals(height_D2 - _1, nullity_D2 + nullity_D2)), logical_neg(equals(height_D2 - _1, nullity_D2 + nullity_D2)))",1.0,0.3,0,0.0,-0.06314549994934908,0.0,47832.67904782535
+6,25,"logical_neg(implies(logical_neg(equals(height_D1, (width_D2 - nullity_D2) * _1)), equals(height_D1, (width_D2 - nullity_D2) * _1)))",1.0,0.3,0,0.0,-0.06480573459810383,0.0,49511.741543271564
+6,26,"logical_neg(implies(equals((nullity_D1 * height_D1) - rank_D1, width_D2), logical_neg(equals((nullity_D1 * height_D1) - rank_D1, width_D2))))",1.0,0.3,0,0.0,-0.06640376227637089,0.0,51169.11422747747
+6,27,"logical_neg(implies(equals(height_D1, (width_D2 - height_D1) + width_D2), logical_neg((nullity_D2 + height_D2) - width_D1)))",2.0,0.0,0,0.0,-0.14058691435063644,0.0,52793.825936904475
+6,28,"implies(logical_neg(equals(width_D1 * (width_D2 - (_1 * (width_D2 + rank_D2))), width_D2)), logical_neg(equals(width_D1 * (width_D2 - (_1 * (width_D2 + rank_D2))), width_D2)))",1.0,0.3,0,0.0,0.024920629128026568,0.0,54406.761462565526
+6,29,"logical_neg(implies(equals(nullity_D2, height_D2 + (width_D2 - nullity_D2)), equals(nullity_D2, height_D2 + (width_D2 - nullity_D2))))",1.0,0.3,0,0.0,-0.07083973341889971,0.0,56001.36886951637
+6,30,"logical_neg(implies(equals((width_D2 - (rank_D1 - width_D2)) * rank_D1, rank_D1), equals(width_D2, (rank_D1 + height_D1) - height_D2)))",2.0,0.0,0,0.0,-0.14059847942291478,0.0,57586.613337175724
+6,31,"logical_neg(implies(equals(width_D2 + nullity_D1, height_D1 + nullity_D1), equals(width_D2 + nullity_D1, height_D1 + nullity_D1)))",1.0,0.3,0,0.0,0.018024742039095026,0.0,59158.76340783349
+6,32,"implies(equals(width_D2 - nullity_D1, height_D2 + height_D2), logical_neg(equals(width_D2 - nullity_D1, height_D2 + height_D2)))",1.0,0.3,0,0.0,-0.07476894316210929,0.0,60721.32363330197
+6,33,"logical_neg(implies(equals(width_D2, width_D1 * (height_D1 - _0)), equals(width_D2, width_D1 * (height_D1 - _0))))",1.0,0.3,0,0.0,-0.07597253069042682,0.0,62236.01512949186
+6,34,"logical_neg(implies(equals(nullity_D2 + (height_D1 + height_D1), height_D2), equals(nullity_D2 + (height_D1 + height_D1), height_D2)))",1.0,0.3,0,0.0,-0.07712525193195845,0.0,63759.2451200463
+6,35,"implies(equals(rank_D1, width_D1 + rank_D1), logical_neg(equals(rank_D1, width_D1 + rank_D1)))",1.0,0.3,0,0.0,-0.07822838827476085,0.0,65263.07251765076
+6,36,"implies(equals(width_D1 + width_D1, width_D1), logical_neg(equals(width_D1 + width_D1, width_D1)))",1.0,0.3,0,0.0,-0.07928319291577904,0.0,66753.60731747873
+6,37,"logical_neg(implies(equals(nullity_D2, rank_D1 + width_D2), equals(_0, (width_D2 * height_D2) - nullity_D1)))",2.0,0.0,0,0.0,-0.1397083966994774,0.0,68239.73944578879
+6,38,"implies(logical_neg(equals(height_D1, rank_D1 + height_D2)), logical_neg(equals(height_D1, rank_D1 + height_D2)))",1.0,0.3,0,0.0,0.004066641936075778,0.0,69706.98865735519
+6,39,"logical_neg(implies(equals(nullity_D1, rank_D2 + rank_D1), equals(nullity_D1, rank_D2 + rank_D1)))",1.0,0.3,0,0.0,-0.08216973799363822,0.0,71157.14339167102
+6,40,"logical_neg(implies(equals(rank_D2 + height_D1, rank_D2), logical_neg(equals(rank_D2 + height_D1, rank_D2))))",1.0,0.3,0,0.0,-0.08304320430220113,0.0,72582.626334965
+6,41,"logical_neg(implies(equals(height_D1, width_D2 + (rank_D2 - _0)), equals(width_D1 * nullity_D2, width_D2 - rank_D1)))",2.0,0.0,0,0.0,-0.13870138991651612,0.0,74010.51695342165
+6,42,"implies(logical_neg(equals(height_D2 + (_1 + nullity_D1), rank_D2)), logical_neg(nullity_D1 - nullity_D1))",2.0,0.0,0,0.0,-0.05644255176256253,0.0,75420.05682318175
+6,43,"implies((width_D2 + width_D2) - nullity_D2, logical_neg(equals(height_D1, height_D2 + height_D2)))",2.0,0.0,0,0.0,-0.056942101553408536,0.0,76817.22241729966
+6,44,"implies((nullity_D2 + rank_D1) - rank_D1, logical_neg((nullity_D2 + rank_D1) - rank_D1))",1.0,0.3,0,0.0,-0.005796773845971492,0.0,78200.68772163245
+6,45,"implies(logical_neg(height_D2 - height_D2), height_D2 - height_D2)",1.0,0.3,0,0.0,-0.0867950675195802,0.0,79570.27490696852
+6,46,"implies((height_D2 + height_D1) - rank_D1, logical_neg(equals(nullity_D2 * rank_D2, height_D1 - nullity_D2)))",2.0,0.0,0,0.0,-0.1370144100957058,0.0,80922.23954922393
+6,47,"implies(equals(width_D1 * height_D2, nullity_D2 - height_D2), logical_neg(equals(width_D1 * height_D2, nullity_D2 - height_D2)))",1.0,0.3,0,0.0,-0.01008737944496493,0.0,82262.5857399695
+6,48,"implies(logical_neg(equals(rank_D2, rank_D2 + (rank_D1 + rank_D1))), equals(height_D2 + rank_D2, width_D2))",2.0,0.0,0,0.0,-0.13622202332722055,0.0,83583.77869949449
+6,49,"implies(logical_neg(equals(nullity_D2 - (_0 + height_D2), nullity_D1)), logical_neg(equals((rank_D2 + rank_D1) + rank_D2, width_D1)))",2.0,0.0,0,0.0,-0.059413239769648976,0.0,84893.60657567004
+7,0,"equals((_1 + rank_D2) + _0, width_D2)",1.0,0.0,0,0.0,0.5,0.0,2201.0361940098696
+7,1,"equals(rank_D2 + ((height_D2 + (_1 - rank_D2)) - height_D1), nullity_D1)",1.0,0.0,0,0.0,-0.004400000000000028,0.0,4380.06202607964
+7,2,"implies(logical_neg(equals(height_D2, width_D1 + (nullity_D2 + width_D2))), logical_neg(equals(height_D2, width_D1 + (nullity_D2 + width_D2))))",1.0,0.3,0,0.0,-0.008668439999999987,0.0,6537.297599828714
+7,3,"implies(logical_neg(conjunction(equals(nullity_D1 + height_D1, width_D2 + rank_D1), equals(width_D2 + nullity_D2, width_D1 - rank_D1))), logical_neg(conjunction(equals(width_D2 + nullity_D2, width_D1 - rank_D1), equals(rank_D2, nullity_D2 * (width_D1 - rank_D1)))))",0.0,0.3,0,0.0,0.03949607470050004,0.0,8672.960817840296
+7,4,"implies(logical_neg(equals(height_D1, (rank_D2 - width_D2) * width_D1)), logical_neg(equals(height_D1, (rank_D2 - width_D2) * width_D1)))",1.0,0.3,0,0.0,-0.07018925192092446,0.0,10787.267403671762
+7,5,"implies(logical_neg(equals(width_D1 * height_D1, rank_D2 - height_D2)), logical_neg(equals(width_D1 * height_D1, rank_D2 - height_D2)))",1.0,0.3,0,0.0,-0.020714655507198036,0.0,12880.430923644913
+7,6,"implies(logical_neg(equals((rank_D1 + height_D2) + height_D1, width_D2)), logical_neg(equals((rank_D1 + height_D2) + height_D1, width_D2)))",1.0,0.3,0,0.0,-0.02448679008216476,0.0,14952.662808418334
+7,7,"implies(logical_neg(equals(width_D1, rank_D2 + (nullity_D2 + rank_D1))), logical_neg(equals(width_D1, rank_D2 + (nullity_D2 + rank_D1))))",1.0,0.3,0,0.0,-0.02814201561689411,0.0,17004.17237434402
+7,8,"logical_neg(implies(logical_neg(equals(width_D2, _0 * (_1 - _1))), equals(width_D2, _0 * (_1 - _1))))",1.0,0.3,0,0.0,-0.031683077036908654,0.0,19035.16684461045
+7,9,"implies(logical_neg(equals(height_D2 * _1, rank_D2 * nullity_D2)), logical_neg(equals(height_D2 * _1, rank_D2 * nullity_D2)))",1.0,0.3,0,0.0,-0.030476472895745413,0.0,21045.851370174212
+7,10,"implies(logical_neg(equals(width_D2 + (width_D1 + height_D1), height_D1)), logical_neg(equals(width_D2 + (width_D1 + height_D1), height_D1)))",1.0,0.3,0,0.0,-0.038913811835208145,0.0,23036.42905048234
+7,11,"implies(logical_neg(equals(height_D1, _0 * (nullity_D2 - height_D1))), logical_neg(equals(height_D1, _0 * (nullity_D2 - height_D1))))",1.0,0.3,0,0.0,-0.04216844912385174,0.0,25007.100953987385
+7,12,"implies(logical_neg(equals(nullity_D2 * (width_D1 * nullity_D2), _1)), logical_neg(equals(nullity_D2 * (width_D1 * nullity_D2), _1)))",1.0,0.3,0,0.0,-0.045318028909009676,0.0,26958.06613845738
+7,13,"implies(logical_neg(equals(width_D2 * _1, nullity_D1 - _0)), logical_neg(equals(width_D2 * _1, nullity_D1 - _0)))",1.0,0.3,0,0.0,-0.04836504473721574,0.0,28889.521671082675
+7,14,"implies(logical_neg(equals(height_D1 + rank_D1, height_D2 + nullity_D1)), logical_neg(equals(height_D1 + rank_D1, height_D2 + nullity_D1)))",1.0,0.3,0,0.0,-0.05131193650440557,0.0,30801.662648381716
+7,15,"implies(logical_neg(equals(width_D2, (width_D1 * rank_D1) - rank_D2)), logical_neg(equals(width_D2, (width_D1 * rank_D1) - rank_D2)))",1.0,0.3,0,0.0,-0.0541610915638537,0.0,32694.682215907767
+7,16,"implies(logical_neg(equals((nullity_D1 - rank_D1) * height_D1, height_D2)), logical_neg(equals((nullity_D1 - rank_D1) * height_D1, height_D2)))",1.0,0.3,0,0.0,-0.056914845811659946,0.0,34568.77158775856
+7,17,"implies(logical_neg(equals(rank_D1 * (nullity_D2 - width_D2), rank_D1)), logical_neg(equals(rank_D1 * (nullity_D2 - width_D2), rank_D1)))",1.0,0.3,0,0.0,-0.0595754847502356,0.0,36424.12006589084
+7,18,"implies(logical_neg(equals(height_D2, height_D2 * height_D1)), logical_neg(equals(height_D2, height_D2 * height_D1)))",1.0,0.3,0,0.0,-0.06214524453023129,0.0,38260.9150592418
+7,19,"implies(logical_neg(equals(rank_D2 + rank_D1, _1 * rank_D2)), logical_neg(equals(rank_D2 + rank_D1, _1 * rank_D2)))",1.0,0.3,0,0.0,-0.06462631297133983,0.0,40079.342102659255
+7,20,"implies(logical_neg(equals(rank_D2 * nullity_D1, height_D1)), logical_neg(equals(rank_D2 * nullity_D1, height_D1)))",1.0,0.3,0,0.0,-0.06702083056239769,0.0,41879.58487564253
+7,21,"implies(logical_neg(equals(rank_D1, (_1 * width_D2) + _0)), logical_neg(equals(rank_D1, (_1 * width_D2) + _0)))",1.0,0.3,0,0.0,-0.06933089144120165,0.0,43661.825220895975
+7,22,"implies(logical_neg(equals(height_D2 * height_D2, _0 + rank_D1)), logical_neg(equals(height_D2 * height_D2, _0 + rank_D1)))",1.0,0.3,0,0.0,-0.07155854435444742,0.0,45426.24316269688
+7,23,"implies(logical_neg(equals(height_D1, (nullity_D2 + nullity_D1) - nullity_D1)), logical_neg(equals(height_D1, (nullity_D2 + nullity_D1) - nullity_D1)))",1.0,0.3,0,0.0,-0.0737057935981904,0.0,47173.016925079784
+7,24,"implies(logical_neg(equals((rank_D2 + (height_D2 - width_D2)) - _1, width_D1)), logical_neg(equals((rank_D2 + (height_D2 - width_D2)) - _1, width_D1)))",1.0,0.3,0,0.0,-0.07577459993921891,0.0,48902.322949838854
+7,25,"implies(logical_neg(equals((rank_D1 + rank_D1) + _1, height_D2)), logical_neg(equals((rank_D1 + rank_D1) + _1, height_D2)))",1.0,0.3,0,0.0,-0.0777668815177246,0.0,50614.33591435033
+7,26,"implies(logical_neg(equals(height_D2 + (width_D2 - _0), height_D1)), logical_neg(equals(nullity_D1 * nullity_D1, rank_D2)))",2.0,0.0,0,0.0,-0.10933283705172005,0.0,52309.2287492167
+7,27,"implies(equals(nullity_D1, (width_D1 * height_D2) - rank_D2), logical_neg(equals(nullity_D1, (width_D1 * height_D2) - rank_D2)))",1.0,0.3,0,0.0,-0.04341219938569213,0.0,53987.1726557344
+7,28,"implies(logical_neg(equals(rank_D2, _0 + (_1 + nullity_D1))), logical_neg(equals(nullity_D2, ((nullity_D2 * ((width_D1 - rank_D2) - (height_D1 + nullity_D2))) + rank_D2) + _1)))",2.0,0.0,0,0.0,-0.11178319825077096,0.0,55648.337123186924
+7,29,"logical_neg(implies(equals((nullity_D2 * _0) * rank_D2, width_D1 - (_0 - rank_D2)), equals(_1 + (_0 + width_D2), rank_D1)))",2.0,0.0,0,0.0,-0.07556238231349303,0.0,57292.889945964926
+7,30,"implies(equals(_1, (rank_D1 - 0.9082689) * width_D2), logical_neg(equals(_1, (rank_D1 - 0.9082689) * width_D2)))",1.0,0.3,0,0.0,-0.049659660279469574,0.0,58920.99724051514
+7,31,"implies(equals(width_D1, (rank_D1 * height_D1) - _0), logical_neg(equals((nullity_D2 + rank_D2) + height_D2, nullity_D1)))",2.0,0.0,0,0.0,-0.11502922626160482,0.0,60532.82346211986
+7,32,"logical_neg(implies(equals(width_D1 * rank_D2, width_D1), logical_neg(equals(width_D1 + _0, width_D1 + _1))))",2.0,0.0,0,0.0,-0.07975353937291657,0.0,62128.53142150852
+7,33,"implies(logical_neg(equals((_0 + nullity_D2) - rank_D2, rank_D2)), logical_neg(equals(nullity_D1 + width_D1, height_D2 + _1)))",2.0,0.0,0,0.0,-0.08103736606978862,0.0,63708.282301303305
+7,34,"logical_neg(implies(equals(nullity_D1 + _1, _1 + _1), equals(nullity_D1 + _1, _1 + _1)))",1.0,0.3,0,0.0,-0.05702264095473552,0.0,65272.23567230014
+7,35,"logical_neg(implies(equals(_0 + rank_D2, rank_D1 + rank_D1), equals(width_D1 + height_D2, _0)))",2.0,0.0,0,0.0,-0.11861599890972335,0.0,66820.54950958701
+7,36,"implies(equals(_0 - nullity_D2, nullity_D2 * rank_D1), logical_neg(equals((height_D1 + _0) * nullity_D1, nullity_D1)))",2.0,0.0,0,0.0,-0.08456873911016431,0.0,68353.38020850101
+7,37,"implies(conjunction(equals(nullity_D1, rank_D1 * (height_D1 - rank_D2)), equals(nullity_D2, width_D2 + rank_D2)), logical_neg(height_D2 - (_0 + _1)))",3.0,0.0,0,0.0,-0.1094106196456337,0.0,69870.88260042587
+7,38,"implies(equals(nullity_D2, (width_D1 + width_D2) + rank_D1), logical_neg(equals(nullity_D2, (width_D1 + width_D2) + rank_D1)))",1.0,0.3,0,0.0,-0.02924775942722842,0.0,71373.20996843149
+7,39,"logical_neg(implies(equals(_0, height_D2 * (width_D2 - rank_D1)), equals(_0, height_D2 * (width_D2 - rank_D1))))",1.0,0.3,0,0.0,-0.09860368559236589,0.0,72860.51406275704
+7,40,"logical_neg(implies(equals(height_D2, width_D1 - rank_D2), equals(height_D2, width_D1 - rank_D2)))",1.0,0.3,0,0.0,-0.09965184516264135,0.0,74332.94511613934
+7,41,"implies(equals((width_D1 + _1) + nullity_D1, _1), logical_neg(equals(height_D1 + height_D1, height_D1)))",2.0,0.0,0,0.0,-0.12257991771882827,0.0,75790.65185898781
+7,42,"logical_neg(implies(_1 - _1, logical_neg(equals(width_D1, nullity_D2 + nullity_D1))))",2.0,0.0,0,0.0,-0.09030808282010006,0.0,77233.7815344078
+7,43,"implies(equals(nullity_D2, rank_D1), logical_neg(nullity_D2 - nullity_D2))",2.0,0.0,0,0.0,-0.09110736248545367,0.0,78662.47991307359
+7,44,"implies(logical_neg(equals(rank_D2 - height_D2, height_D1)), logical_neg(equals(height_D1 + rank_D2, height_D2 + height_D1)))",2.0,0.0,0,0.0,-0.091864772380332,0.0,80076.89130795273
+7,45,"implies(equals(nullity_D1, _1 + rank_D2), logical_neg(nullity_D2 - nullity_D2))",2.0,0.0,0,0.0,-0.09258140535421891,0.0,81477.15858888307
+7,46,"logical_neg(implies(logical_neg(equals(height_D2 + rank_D1, height_D1)), width_D2 + (_0 - rank_D2)))",2.0,0.0,0,0.0,-0.09325832991248288,0.0,82863.42319700411
+7,47,"implies(logical_neg(equals(nullity_D2, width_D1 + (rank_D2 - _1))), logical_neg(equals(nullity_D2, width_D1 + (rank_D2 - _1))))",1.0,0.3,0,0.0,-0.07445739482307792,0.0,84235.82515904395
+7,48,"logical_neg(implies(equals((width_D2 * height_D1) + height_D1, rank_D1), logical_neg(equals(height_D2 + width_D2, width_D2))))",2.0,0.0,0,0.0,-0.1253617161822097,0.0,85594.50310146337
+7,49,"logical_neg(implies(equals(width_D1, _1 + width_D2), logical_neg(equals(_1, _0 * (height_D1 + rank_D1)))))",2.0,0.0,0,0.0,-0.09506118363143837,0.0,86939.5942644586
+8,0,"equals(_1 + (rank_D1 - (height_D1 + (height_D1 - height_D1))), _0)",1.0,0.0,0,0.0,0.5,0.0,2201.0361940098696
+8,1,"implies(logical_neg(conjunction(equals((rank_D2 + width_D2) + _1, nullity_D1), equals(((height_D1 + (width_D2 + nullity_D1)) + (_0 - _1)) - width_D2, height_D2))), logical_neg(equals((rank_D2 + width_D2) + _1, nullity_D1)))",2.0,0.3,0,0.0,-0.058849999999999965,0.0,4380.06202607964
+8,2,"implies(logical_neg(equals(width_D1, (rank_D1 * rank_D2) - height_D1)), logical_neg(equals(width_D1, (rank_D1 * rank_D2) - height_D1)))",1.0,0.3,0,0.0,0.04578155999999998,0.0,6534.238308474062
+8,3,"implies(logical_neg(equals(height_D2 + nullity_D1, height_D1 + _1)), logical_neg(equals(height_D2 + nullity_D1, height_D1 + _1)))",1.0,0.3,0,0.0,-0.012808378044000014,0.0,8669.901526485644
+8,4,"logical_neg(implies(logical_neg(equals(width_D1, (rank_D2 - nullity_D1) + _1)), equals(width_D1, (rank_D2 - nullity_D1) + _1)))",1.0,0.3,0,0.0,-0.01682280692092444,0.0,10784.208112317112
+8,5,"implies(logical_neg(equals(width_D1 - (height_D2 * width_D2), _1)), logical_neg(equals(width_D1 - (height_D2 * width_D2), _1)))",1.0,0.3,0,0.0,-0.020714655507198036,0.0,12877.371632290264
+8,6,"implies(logical_neg(equals(width_D2 - height_D2, width_D1 * width_D2)), logical_neg(equals(width_D2 - height_D2, width_D1 * width_D2)))",1.0,0.3,0,0.0,-0.02448679008216476,0.0,14949.603517063684
+8,7,"implies(logical_neg(equals(width_D2, nullity_D2 - (_1 + nullity_D2))), logical_neg(equals(width_D2, nullity_D2 - (_1 + nullity_D2))))",1.0,0.3,0,0.0,-0.023315649990399756,0.0,17001.11308298937
+8,8,"implies(logical_neg(equals((nullity_D1 * height_D2) - _0, width_D2)), logical_neg(equals((nullity_D1 * height_D2) - _0, width_D2)))",1.0,0.3,0,0.0,-0.03207911549987,0.0,19032.1075532558
+8,9,"equals(rank_D1 + _0, rank_D1 + ((((height_D1 - nullity_D2) + height_D2) - width_D1) - rank_D1))",1.0,0.0,0,0.0,-0.035551568715099006,0.0,21042.792078819562
+8,10,"implies(logical_neg(equals(rank_D2, width_D1 + (nullity_D1 + width_D2))), logical_neg(equals(rank_D2, width_D1 + (nullity_D1 + width_D2))))",1.0,0.3,0,0.0,-0.038913811835208145,0.0,23033.36975912769
+8,11,"implies(logical_neg(equals(_1 + (rank_D1 + nullity_D2), height_D1)), logical_neg(equals(_1 + (rank_D1 + nullity_D2), height_D1)))",1.0,0.3,0,0.0,-0.04216844912385174,0.0,25004.041662632735
+8,12,"logical_neg(implies(logical_neg(equals(_0, _0 + (_1 - rank_D2))), equals(_0, _0 + (_1 - rank_D2))))",1.0,0.3,0,0.0,-0.045318028909009676,0.0,26955.00684710273
+8,13,"implies(logical_neg(equals(nullity_D1 + width_D1, _1 + width_D2)), logical_neg(equals(nullity_D1 + width_D1, _1 + width_D2)))",1.0,0.3,0,0.0,-0.04836504473721574,0.0,28886.462379728026
+8,14,"implies(logical_neg(equals(nullity_D2 + height_D2, height_D1 + height_D1)), logical_neg(equals(nullity_D2 + height_D2, height_D1 + height_D1)))",1.0,0.3,0,0.0,-0.05131193650440557,0.0,30798.603357027067
+8,15,"implies(logical_neg(equals(width_D1 + (rank_D1 + nullity_D2), _1)), logical_neg(equals(width_D1 + (rank_D1 + nullity_D2), _1)))",1.0,0.3,0,0.0,-0.0541610915638537,0.0,32691.622924553118
+8,16,"implies(logical_neg(equals((nullity_D2 * height_D1) - width_D1, height_D2)), logical_neg(equals((nullity_D2 * height_D1) - width_D1, height_D2)))",1.0,0.3,0,0.0,-0.056914845811659946,0.0,34565.71229640391
+8,17,"implies(logical_neg(equals(height_D2 * _0, nullity_D2 - width_D2)), logical_neg(equals(height_D2 * _0, nullity_D2 - width_D2)))",1.0,0.3,0,0.0,-0.0595754847502356,0.0,36421.06077453619
+8,18,"implies(logical_neg(equals(nullity_D2 - width_D2, width_D1 * rank_D1)), logical_neg(equals(nullity_D2 - width_D2, width_D1 * rank_D1)))",1.0,0.3,0,0.0,-0.06214524453023129,0.0,38257.85576788715
+8,19,"implies(logical_neg(equals(nullity_D1, (nullity_D1 * width_D2) + _0)), logical_neg(equals(nullity_D1, (nullity_D1 * width_D2) + _0)))",1.0,0.3,0,0.0,-0.06462631297133983,0.0,40076.282811304605
+8,20,"logical_neg(implies(logical_neg(equals(rank_D2, nullity_D2 + (rank_D1 * nullity_D1))), equals(rank_D2, nullity_D2 + (rank_D1 * nullity_D1))))",1.0,0.3,0,0.0,-0.06702083056239769,0.0,41876.52558428788
+8,21,"implies(logical_neg(equals((height_D2 + nullity_D2) - nullity_D1, rank_D2)), logical_neg(equals((height_D2 + nullity_D2) - nullity_D1, rank_D2)))",1.0,0.3,0,0.0,-0.06933089144120165,0.0,43658.765929541325
+8,22,"implies(logical_neg(equals(width_D1 + rank_D1, nullity_D2)), logical_neg(equals(width_D1 + rank_D1, nullity_D2)))",1.0,0.3,0,0.0,-0.07155854435444742,0.0,45423.18387134223
+8,23,"implies(logical_neg(equals(width_D1, (rank_D2 - height_D2) * width_D2)), logical_neg(equals(width_D1, (rank_D2 - height_D2) * width_D2)))",1.0,0.3,0,0.0,-0.0737057935981904,0.0,47169.957633725135
+8,24,"implies(logical_neg(0.0), logical_neg(0.0))",1.0,0.3,0,0.0,-0.07577459993921891,0.0,48899.263658484204
+8,25,"logical_neg(implies(logical_neg(equals(nullity_D2 + nullity_D1, height_D2 - rank_D1)), equals(height_D1 - (height_D1 * width_D1), rank_D1)))",2.0,0.0,0,0.0,-0.10801718487460138,0.0,50611.27662299568
+8,26,"implies(logical_neg(equals(rank_D2, rank_D2 - (width_D2 * nullity_D1))), logical_neg(equals(nullity_D2 + height_D1, rank_D1 - nullity_D2)))",2.0,0.0,0,0.0,-0.0708306797614623,0.0,52306.16945786205
+8,27,"logical_neg(implies(equals(nullity_D2, (width_D2 - rank_D1) * nullity_D1), logical_neg(equals(nullity_D1, width_D1 * nullity_D1))))",2.0,0.0,0,0.0,-0.07247052009159761,0.0,53984.11336437975
+8,28,"implies(equals(nullity_D2 + (_0 - rank_D1), rank_D2), logical_neg(equals(nullity_D2 + (_0 - rank_D1), rank_D2)))",1.0,0.3,0,0.0,-0.04556717376673138,0.0,55645.277831832274
+8,29,"implies(equals(_1 * (_1 * (((_0 - nullity_D2) * _0) - height_D1)), rank_D1), logical_neg(equals(nullity_D1 - rank_D1, width_D2 * rank_D1)))",2.0,0.0,0,0.0,-0.11292098703007283,0.0,57289.830654610276
+8,30,"logical_neg(implies(logical_neg(equals(width_D1 - _1, width_D2 * nullity_D2)), equals(width_D1, _1 - (rank_D1 + rank_D2))))",2.0,0.0,0,0.0,-0.07701749239900763,0.0,58917.93794916049
+8,31,"logical_neg(implies(equals(_1 + (width_D2 - rank_D1), height_D1), equals(_1 + (width_D2 - rank_D1), height_D1)))",1.0,0.3,0,0.0,-0.05160064651852569,0.0,60529.76417076521
+8,32,"implies(equals(height_D2 + width_D2, nullity_D1 + rank_D2), logical_neg(equals(((_0 - (rank_D1 - rank_D2)) + _0) + _0, nullity_D1)))",2.0,0.0,0,0.0,-0.11600255617080923,0.0,62125.47213015388
+8,33,"implies(equals((nullity_D1 - (height_D1 - _0)) + ((width_D1 + nullity_D1) - _0), _0), logical_neg(equals((nullity_D1 - (height_D1 - _0)) + ((width_D1 + nullity_D1) - _0), _0)))",1.0,0.3,0,0.0,-0.055280510198598476,0.0,63705.22300994866
+8,34,"logical_neg(implies(equals(height_D1 * rank_D1, height_D1), equals(height_D1 * rank_D1, height_D1)))",1.0,0.3,0,0.0,-0.09255030231835011,0.0,65269.1763809455
+8,35,"logical_neg(implies(equals(height_D2, (nullity_D1 * height_D2) - height_D2), equals(height_D2, (nullity_D1 * height_D2) - height_D2)))",1.0,0.3,0,0.0,-0.09387406592971304,0.0,66817.49021823237
+8,36,"implies(equals(rank_D2, (height_D1 + _1) + rank_D1), logical_neg(equals(rank_D1, (width_D1 * width_D1) + nullity_D1)))",2.0,0.0,0,0.0,-0.11938940001264298,0.0,68350.32091714637
+8,37,"logical_neg(implies(rank_D2 - (height_D2 + height_D2), equals(_1 - height_D2, rank_D2)))",2.0,0.0,0,0.0,-0.08564361754534834,0.0,69867.82330907123
+8,38,"implies(nullity_D2 - _0, logical_neg(equals(_1 + height_D1, _0)))",2.0,0.0,0,0.0,-0.08666952793623744,0.0,71370.15067707685
+8,39,"implies((_0 - rank_D1) + _0, logical_neg((_0 - rank_D1) + _0))",1.0,0.3,0,0.0,-0.06481723313935174,0.0,72857.4547714024
+8,40,"implies(rank_D1 + (rank_D2 - nullity_D2), logical_neg(equals(rank_D2, nullity_D1 * rank_D2)))",2.0,0.0,0,0.0,-0.1220280058508319,0.0,74329.8858247847
+8,41,"implies(equals(rank_D1, width_D2 - nullity_D2), logical_neg(equals(rank_D1, _0 + rank_D2)))",2.0,0.0,0,0.0,-0.0894658156696291,0.0,75787.59256763317
+8,42,"implies((_1 + _1) - _1, logical_neg(equals(width_D2 * rank_D2, _0 - rank_D2)))",2.0,0.0,0,0.0,-0.09030808282010006,0.0,77230.72224305315
+8,43,"logical_neg(implies(equals(width_D2 * (nullity_D1 - width_D1), height_D1), logical_neg(nullity_D1 + (rank_D2 - rank_D1))))",2.0,0.0,0,0.0,-0.09110736248545367,0.0,78659.42062171895
+8,44,"logical_neg(implies(logical_neg(equals(nullity_D2 + _1, nullity_D1)), equals(width_D1, rank_D1)))",2.0,0.0,0,0.0,-0.091864772380332,0.0,80073.83201659808
+8,45,"implies(equals(nullity_D2 + nullity_D2, height_D1), logical_neg(_0 + (nullity_D2 - _0)))",2.0,0.0,0,0.0,-0.09258140535421891,0.0,81474.09929752843
+8,46,"logical_neg(implies(equals(rank_D1 + _0, width_D1), equals(height_D2 + height_D1, rank_D2)))",2.0,0.0,0,0.0,-0.09325832991248288,0.0,82860.36390564947
+8,47,"implies(logical_neg(equals(nullity_D1, rank_D1)), logical_neg((height_D1 - height_D2) * (_1 - _1)))",2.0,0.0,0,0.0,-0.09389659072678924,0.0,84232.7658676893
+8,48,"implies(logical_neg(equals(width_D1, nullity_D2 + width_D2)), logical_neg(nullity_D2 - _0))",2.0,0.0,0,0.0,-0.0944972091350953,0.0,85591.44381010873
+8,49,"logical_neg(implies(logical_neg(equals(_1, nullity_D1)), equals(nullity_D1 * _1, width_D2 + height_D1)))",2.0,0.0,0,0.0,-0.09506118363143837,0.0,86936.53497310396
+9,0,"equals(height_D2, ((height_D2 - (height_D2 - nullity_D2)) * _1) * width_D1)",1.0,0.0,0,0.0,0.5,0.0,2195.0872813753663
+9,1,"equals((_1 + nullity_D2) - rank_D1, nullity_D2 + (nullity_D2 - rank_D1))",1.0,0.0,0,0.0,-0.004400000000000028,0.0,4371.128570301546
+9,2,"equals((nullity_D2 + (width_D1 - (width_D1 + _1))) - (rank_D1 - height_D1), _1)",1.0,0.0,0,0.0,-0.008668439999999987,0.0,6525.409446338463
+9,3,"implies(logical_neg(equals(height_D1 + nullity_D2, _1 + _1)), logical_neg(equals(height_D1 + nullity_D2, _1 + _1)))",1.0,0.3,0,0.0,-0.012808378044000014,0.0,8658.147513615011
+9,4,"implies(logical_neg(equals((rank_D1 - _0) * width_D1, rank_D1)), logical_neg(equals((rank_D1 - _0) * width_D1, rank_D1)))",1.0,0.3,0,0.0,-0.011696447507435955,0.0,10769.558200218793
+9,5,"implies(logical_neg(equals(_0, (rank_D2 * height_D2) - width_D1)), logical_neg(equals(_0, (rank_D2 * height_D2) - width_D1)))",1.0,0.3,0,0.0,-0.020973588701038038,0.0,12859.854779956539
+9,6,"implies(logical_neg(equals((width_D1 * _1) + rank_D1, height_D1)), logical_neg(equals((width_D1 * _1) + rank_D1, height_D1)))",1.0,0.3,0,0.0,-0.024792874958191807,0.0,14929.248393896905
+9,7,"implies(logical_neg(equals(height_D2 * (rank_D2 - _0), _0)), logical_neg(equals(height_D2 * (rank_D2 - _0), _0)))",1.0,0.3,0,0.0,-0.028493790812105287,0.0,16977.94807169787
+9,8,"implies(logical_neg(equals(nullity_D1 + _0, _0 + width_D1)), logical_neg(equals(nullity_D1 + _0, _0 + width_D1)))",1.0,0.3,0,0.0,-0.03207911549987,0.0,19006.16075272082
+9,9,"implies(logical_neg(equals(width_D2 + (height_D2 + _1), _1)), logical_neg(equals(width_D2 + (height_D2 + _1), _1)))",1.0,0.3,0,0.0,-0.035551568715099006,0.0,21014.091306933547
+9,10,"implies(logical_neg(equals(nullity_D1 - rank_D1, width_D1 * rank_D1)), logical_neg(equals(nullity_D1 - rank_D1, width_D1 * rank_D1)))",1.0,0.3,0,0.0,-0.038913811835208145,0.0,23001.942555604146
+9,11,"implies(logical_neg(equals(rank_D2 + width_D2, _1 + rank_D1)), logical_neg(equals(rank_D2 + width_D2, _1 + rank_D1)))",1.0,0.3,0,0.0,-0.04216844912385174,0.0,24969.91529178804
+9,12,"implies(logical_neg(equals(rank_D1 - nullity_D1, height_D1)), logical_neg(equals(rank_D1 - nullity_D1, height_D1)))",1.0,0.3,0,0.0,-0.045318028909009676,0.0,26918.20830061009
+9,13,"implies(logical_neg(equals(width_D1 - (rank_D2 * width_D1), rank_D2)), logical_neg(equals(width_D1 - (rank_D2 * width_D1), rank_D2)))",1.0,0.3,0,0.0,-0.04836504473721574,0.0,28847.01837934392
+9,14,"logical_neg(implies(logical_neg(equals(_1, (_1 * rank_D2) * nullity_D1)), equals(_1, (_1 * rank_D2) * nullity_D1)))",1.0,0.3,0,0.0,-0.05131193650440557,0.0,30756.540357290414
+9,15,"implies(logical_neg(equals((rank_D1 * width_D1) - nullity_D2, _1)), logical_neg(equals((rank_D1 * width_D1) - nullity_D2, _1)))",1.0,0.3,0,0.0,-0.0541610915638537,0.0,32646.967115457443
+9,16,"implies(logical_neg(equals(width_D1 * (_0 - rank_D1), height_D1)), logical_neg(equals(width_D1 * (_0 - rank_D1), height_D1)))",1.0,0.3,0,0.0,-0.056914845811659946,0.0,34518.4896060428
+9,17,"implies(logical_neg(equals(width_D2 * rank_D2, height_D1)), logical_neg(equals(width_D2 * rank_D2, height_D1)))",1.0,0.3,0,0.0,-0.0595754847502356,0.0,36371.296871722305
+9,18,"implies(logical_neg(equals(rank_D2, width_D1 + (nullity_D1 + rank_D1))), logical_neg(equals(rank_D2, width_D1 + (nullity_D1 + rank_D1))))",1.0,0.3,0,0.0,-0.06214524453023129,0.0,38205.576064745015
+9,19,"implies(logical_neg(equals(width_D2, _0 * (rank_D2 + nullity_D2))), logical_neg(equals(width_D2, _0 * (rank_D2 + nullity_D2))))",1.0,0.3,0,0.0,-0.06462631297133983,0.0,40021.5124658375
+9,20,"logical_neg(implies(logical_neg(equals(height_D1, (_0 * _0) - width_D1)), equals(height_D1, (_0 * _0) - width_D1)))",1.0,0.3,0,0.0,-0.06702083056239769,0.0,41819.289502919055
+9,21,"implies(logical_neg(equals((rank_D2 * width_D2) + nullity_D2, rank_D2)), logical_neg(equals((rank_D2 * width_D2) + nullity_D2, rank_D2)))",1.0,0.3,0,0.0,-0.06933089144120165,0.0,43599.088769629794
+9,22,"logical_neg(implies(logical_neg(equals(width_D1 * height_D1, width_D2 + width_D2)), equals(width_D1 * height_D1, width_D2 + width_D2)))",1.0,0.3,0,0.0,-0.07155854435444742,0.0,45361.09004367343
+9,23,"implies(logical_neg(equals(width_D2, (width_D1 - width_D2) * height_D1)), logical_neg(equals(width_D2, (width_D1 - width_D2) * height_D1)))",1.0,0.3,0,0.0,-0.0737057935981904,0.0,47105.47130497663
+9,24,"implies(logical_neg(equals(nullity_D2 - width_D2, _1 * _0)), logical_neg(equals(nullity_D2 - width_D2, _1 * _0)))",1.0,0.3,0,0.0,-0.07577459993921891,0.0,48832.408753666794
+9,25,"logical_neg(implies(logical_neg(equals(nullity_D2 - width_D1, _1 * rank_D1)), equals(_0 + width_D1, _0 + nullity_D2)))",2.0,0.0,0,0.0,-0.10801718487460138,0.0,50542.076827870056
+9,26,"logical_neg(implies(logical_neg(equals(height_D1 - rank_D2, width_D2 * rank_D2)), equals((nullity_D2 * height_D2) * ((_0 - height_D2) + _0), height_D2 + (_0 * height_D2))))",2.0,0.0,0,0.0,-0.0708306797614623,0.0,52234.648221331285
+9,27,"logical_neg(implies(equals((nullity_D1 + rank_D1) - nullity_D2, nullity_D2), logical_neg(equals((nullity_D1 + rank_D1) - nullity_D2, nullity_D2))))",1.0,0.3,0,0.0,-0.04341219938569213,0.0,53910.293900857905
+9,28,"implies(equals(rank_D1 - width_D2, nullity_D2 + width_D1), logical_neg(equals(nullity_D1 * rank_D1, _0)))",2.0,0.0,0,0.0,-0.11178319825077096,0.0,55569.18312358926
+9,29,"implies(equals(height_D2, (nullity_D2 + rank_D1) - width_D1), logical_neg(equals(height_D2, (nullity_D2 + rank_D1) - width_D1)))",1.0,0.3,0,0.0,-0.04764907538609985,0.0,57211.4834540933
+9,30,"implies(equals(nullity_D1 - _0, _0 * _0), logical_neg(equals(nullity_D1 - _0, _0 * _0)))",1.0,0.3,0,0.0,-0.08664467894888357,0.0,58837.3607812923
+9,31,"logical_neg(implies(equals(nullity_D2 - _1, nullity_D1), equals(nullity_D2 - _1, nullity_D1)))",1.0,0.3,0,0.0,-0.08821581500124555,0.0,60446.97933521931
+9,32,"implies(equals(rank_D2 * height_D2, width_D2), logical_neg(equals(rank_D2 * height_D2, width_D2)))",1.0,0.3,0,0.0,-0.08972273179453115,0.0,62040.50170360705
+9,33,"implies(equals(rank_D1, (rank_D2 * _1) * rank_D2), logical_neg(equals(rank_D1, (rank_D2 * _1) * rank_D2)))",1.0,0.3,0,0.0,-0.09116703682851221,0.0,63618.08884831091
+9,34,"implies(equals(height_D2, _1 + (rank_D1 + _0)), logical_neg(equals((rank_D2 - nullity_D2) * rank_D1, _1)))",2.0,0.0,0,0.0,-0.11779459675770361,0.0,65179.900121567734
+9,35,"logical_neg(implies(((rank_D2 - height_D2) + width_D2) + nullity_D1, logical_neg(equals(nullity_D1, (rank_D2 - _0) + rank_D1))))",2.0,0.0,0,0.0,-0.08344361415974491,0.0,66726.09328209198
+9,36,"logical_neg(implies(equals(_1, nullity_D1 + height_D2), equals(height_D1 + (width_D1 + _0), rank_D1)))",2.0,0.0,0,0.0,-0.08456873911016431,0.0,68256.824511011
+9,37,"logical_neg(implies(equals(_0 + height_D2, width_D2 + width_D2), width_D1 + (_1 - rank_D1)))",2.0,0.0,0,0.0,-0.08564361754534834,0.0,69772.24842764082
+9,38,"implies(equals(nullity_D1, height_D2 - _0), logical_neg(equals(nullity_D1, height_D2 - _0)))",1.0,0.3,0,0.0,-0.0633754891777478,0.0,71272.51810510435
+9,39,"logical_neg(implies((nullity_D1 + rank_D1) - nullity_D2, equals((_1 * rank_D1) - nullity_D1, width_D1)))",2.0,0.0,0,0.0,-0.1214341729795616,0.0,72757.78508579324
+9,40,"logical_neg(implies(logical_neg(equals(_1 + height_D1, width_D2)), (height_D2 - _1) + nullity_D2))",2.0,0.0,0,0.0,-0.08857941792234789,0.0,74228.19939667523
+9,41,"implies(equals(nullity_D2 + (rank_D2 + _1), _1), logical_neg(equals(nullity_D2 + (rank_D2 + _1), _1)))",1.0,0.3,0,0.0,-0.06753494057913356,0.0,75683.90956444842
+9,42,"logical_neg(implies(logical_neg(equals(nullity_D2 + width_D1, _0)), equals(rank_D1 + (height_D1 + rank_D2), height_D2)))",2.0,0.0,0,0.0,-0.12309104384880723,0.0,77125.06263054386
+9,43,"logical_neg(implies(equals(height_D2, _1 - (width_D2 - rank_D1)), logical_neg(equals(_0, rank_D2))))",2.0,0.0,0,0.0,-0.09110736248545367,0.0,78551.80416597836
+9,44,"logical_neg(implies(equals(rank_D2, width_D1 + rank_D1), equals(rank_D2, width_D1 + rank_D1)))",1.0,0.3,0,0.0,-0.07121728882363762,0.0,79964.27828605851
+9,45,"logical_neg(implies(logical_neg(equals(rank_D2, height_D2 * (nullity_D2 + rank_D1))), equals(rank_D2, height_D2 * (nullity_D2 + rank_D1))))",1.0,0.3,0,0.0,-0.10415408102349624,0.0,81362.62766493786
+9,46,"implies(equals(nullity_D2, height_D1 + nullity_D1), logical_neg(equals(rank_D1 * rank_D1, width_D2 + rank_D2)))",2.0,0.0,0,0.0,-0.12474951147264449,0.0,82746.9935500284
+9,47,"implies(equals(_0, _0 + width_D2), logical_neg(equals(width_D2 - _0, nullity_D2 * nullity_D1)))",2.0,0.0,0,0.0,-0.09389659072678924,0.0,84117.51577626805
+9,48,"logical_neg(implies(nullity_D2 + (_0 - _0), equals(width_D2, height_D2 + height_D1)))",2.0,0.0,0,0.0,-0.0944972091350953,0.0,85474.3327802453
+9,49,"logical_neg(implies(equals(width_D1, width_D2), logical_neg(equals(_0 + (height_D1 * _0), width_D2))))",2.0,0.0,0,0.0,-0.09506118363143837,0.0,86817.58161418278

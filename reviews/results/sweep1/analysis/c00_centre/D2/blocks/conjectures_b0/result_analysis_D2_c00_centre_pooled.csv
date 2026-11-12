@@ -1,0 +1,6 @@
+tier,betti_type,episode,step,atomic_block,conjecture,formal_response
+gold,b0,1,11,"equals(rank_D1, height_D1)","implies(logical_neg(equals(rank_D1, height_D1)), logical_neg(equals(rank_D1, height_D1)))",0
+gold,b0,1,11,"equals(rank_D1, height_D1)","implies(logical_neg(equals(rank_D1, height_D1)), logical_neg(equals(rank_D1, height_D1)))",0
+gold,b0,9,42,"equals(height_D1, rank_D1)","implies(equals(height_D1, rank_D1), logical_neg(equals(height_D2, nullity_D1)))",0
+silver,b0,6,18,"equals(width_D1, height_D1 + nullity_D1)","implies(logical_neg(equals(width_D1, height_D1 + nullity_D1)), logical_neg(equals(width_D1, height_D1 + nullity_D1)))",0
+silver,b0,6,18,"equals(width_D1, height_D1 + nullity_D1)","implies(logical_neg(equals(width_D1, height_D1 + nullity_D1)), logical_neg(equals(width_D1, height_D1 + nullity_D1)))",0

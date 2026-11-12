@@ -1,0 +1,12 @@
+arm	flags
+c00_centre
+c02_lra_x2	--lr-actor 2e-3
+c04_lrc_x2	--lr-critic 2e-2
+c05_gamma_0.90	--gamma 0.90
+c06_gamma_0.99	--gamma 0.99
+c08_tau_x2	--tau 0.02
+c09_bs_32	--batch-size 32
+c10_bs_128	--batch-size 128
+c11_ou_off	--no-ou-noise
+c12_expl_x0.5	--expl-noise 0.05
+c13_expl_x2	--expl-noise 0.2

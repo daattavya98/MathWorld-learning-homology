@@ -1,0 +1,3 @@
+episode,step,statement,diversity reward,formal reward,refuter reward
+8,0,"logical_neg(conjunction(equals(width_D2, (rank_D2 + _1)), equals((nullity_D2 * height_D2), (height_D2 * _2))))",21.6,0.0,965.0024200970544
+8,1,"implies(conjunction(equals((nullity_D1 - (rank_D1 - _2)), rank_D1), equals(width_D1, height_D2)), equals(height_D1, (height_D2 + (nullity_D2 - width_D2))))",0.0,0.0,1941.738815993138

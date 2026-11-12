@@ -1,0 +1,2 @@
+tier,betti_type,episode,step,atomic_block,conjecture,formal_response
+gold,b1,9,5,"equals(nullity_D1, (_1 * _1) * rank_D2)","logical_neg(conjunction(equals(height_D2, (_1 - nullity_D2) * height_D2), equals(nullity_D1, (_1 * _1) * rank_D2)))",0

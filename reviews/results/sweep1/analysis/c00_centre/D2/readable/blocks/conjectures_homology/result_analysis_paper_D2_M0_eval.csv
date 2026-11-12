@@ -1,0 +1,19 @@
+tier,betti_type,episode,step,atomic_block,conjecture,formal_response
+gold,b0,0,8,"equals(_0, (height_D1 - rank_D1))","logical_neg(equals(_0, (height_D1 - rank_D1)))",1
+gold,b0,5,15,"equals((rank_D2 - (height_D1 - rank_D1)), rank_D2)","logical_neg(equals((rank_D2 - (height_D1 - rank_D1)), rank_D2))",1
+gold,b0,7,35,"equals(((height_D2 + ((height_D2 * (rank_D1 * width_D2)) - height_D2)) - rank_D1), (((width_D2 * height_D2) * rank_D1) - height_D1))","logical_neg(equals(((height_D2 + ((height_D2 * (rank_D1 * width_D2)) - height_D2)) - rank_D1), (((width_D2 * height_D2) * rank_D1) - height_D1)))",1
+gold,b1,0,1,"equals(nullity_D2, ((rank_D2 - nullity_D1) + nullity_D2))","implies(conjunction(conjunction(equals(_1, (height_D1 - rank_D1)), equals(nullity_D2, ((rank_D2 - nullity_D1) + nullity_D2))), equals(width_D2, nullity_D1)), logical_neg(equals((rank_D2 * nullity_D2), nullity_D1)))",1
+gold,b1,0,3,"equals(nullity_D1, (rank_D2 - (nullity_D1 - nullity_D1)))","logical_neg(conjunction(equals(nullity_D1, (rank_D2 - (nullity_D1 - nullity_D1))), equals(_0, ((_1 - nullity_D2) * nullity_D2))))",1
+gold,b1,1,6,"equals(rank_D2, nullity_D1)","logical_neg(conjunction(equals(rank_D2, nullity_D1), equals(nullity_D1, ((_2 * rank_D1) - _1))))",1
+gold,b1,3,4,"equals(((nullity_D1 + _1) - rank_D2), _1)","equals(((nullity_D1 + _1) - rank_D2), _1)",1
+gold,b1,5,22,"equals((rank_D2 - nullity_D1), _0)","equals((rank_D2 - nullity_D1), _0)",1
+gold,b1,6,2,"equals(nullity_D1, (rank_D2 - (nullity_D1 - rank_D2)))","logical_neg(conjunction(equals(nullity_D2, ((nullity_D2 - height_D1) + height_D1)), conjunction(equals(nullity_D1, (rank_D2 - (nullity_D1 - rank_D2))), equals((width_D1 - height_D1), width_D2))))",1
+gold,b1,7,8,"equals(height_D1, ((height_D1 + rank_D2) - nullity_D1))","logical_neg(conjunction(equals(nullity_D1, width_D2), equals(height_D1, ((height_D1 + rank_D2) - nullity_D1))))",1
+gold,b1,7,9,"equals((rank_D2 - nullity_D1), _0)","logical_neg(conjunction(equals((rank_D2 - nullity_D1), _0), equals((nullity_D2 + width_D2), (rank_D2 * nullity_D2))))",1
+gold,b1,8,3,"equals(rank_D2, nullity_D1)","logical_neg(conjunction(equals(rank_D2, nullity_D1), equals(((nullity_D1 + width_D1) - width_D2), height_D2)))",1
+gold,b1,8,13,"equals((rank_D2 - nullity_D1), (_2 - _2))","logical_neg(conjunction(equals((_2 + rank_D2), (height_D2 - rank_D1)), equals((rank_D2 - nullity_D1), (_2 - _2))))",1
+gold,b1,9,6,"equals(_0, (nullity_D1 - rank_D2))","logical_neg(conjunction(equals(_0, (nullity_D1 - rank_D2)), conjunction(equals(_2, ((_1 + rank_D2) * nullity_D1)), equals(_1, ((_1 + height_D2) - height_D2)))))",1
+gold,b1,9,17,"equals((nullity_D1 - rank_D2), _0)","logical_neg(conjunction(equals(_1, ((width_D2 - height_D1) - rank_D1)), equals((nullity_D1 - rank_D2), _0)))",1
+gold,b1,11,3,"equals(nullity_D1, rank_D2)","logical_neg(conjunction(equals(width_D2, (rank_D2 + nullity_D2)), conjunction(equals((rank_D1 - height_D2), nullity_D2), equals(nullity_D1, rank_D2))))",1
+gold,b1,13,2,"equals((height_D1 + nullity_D1), (height_D1 + rank_D2))","logical_neg(conjunction(equals(nullity_D1, (_1 + width_D2)), equals((height_D1 + nullity_D1), (height_D1 + rank_D2))))",1
+silver,b1,5,1,"equals((nullity_D2 - width_D2), (_0 - nullity_D1))","logical_neg(conjunction(equals(nullity_D2, _1), equals((nullity_D2 - width_D2), (_0 - nullity_D1))))",1
